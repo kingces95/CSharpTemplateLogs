@@ -2,7 +2,7 @@ Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
 C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe /v:diag CSharpTemplate.csproj
-Build started 12/19/2016 5:45:39 PM.
+Build started 12/19/2016 5:46:25 PM.
 Environment at start of build:
 ALLUSERSPROFILE = C:\ProgramData
 APPDATA = C:\Users\kingc\AppData\Roaming
@@ -989,6 +989,8 @@ Task "MakeDir" (TaskId:6)
       Directories=
           bin\Debug\
           obj\Debug\ (TaskId:6)
+  Creating directory "bin\Debug\". (TaskId:6)
+  Creating directory "obj\Debug\". (TaskId:6)
 Done executing task "MakeDir". (TaskId:6)
 Done building target "PrepareForBuild" in project "CSharpTemplate.csproj".: (TargetId:7)
 Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
@@ -1568,11 +1570,135 @@ Done executing task "CallTarget". (TaskId:15)
 Done building target "PreXsdCodeGen" in project "CSharpTemplate.csproj".: (TargetId:39)
 Target "XsdCodeGen" skipped, due to false condition; ( '$(XsdCodeGenPreCondition)' == 'True' ) was evaluated as ( 'False' == 'True' ).
 Target "CoreCompile: (TargetId:41)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.Core.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
-Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
-Input files: Class1.cs;Properties\AssemblyInfo.cs;C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll;C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.props;F:\git\CSharpTemplate\CSharpTemplate.csproj;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Xaml.targets;C:\Program Files %28x86%29\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset
-Output files: obj\Debug\CSharpTemplate.dll;obj\Debug\CSharpTemplate.pdb
+Building target "CoreCompile" completely.
+Output file "obj\Debug\CSharpTemplate.dll" does not exist.
 Set Property: NoWarn=;1701;1702
 Set Property: UseSharedCompilation=true
+Using "Csc" task from assembly "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Build.Tasks.CodeAnalysis.dll".
+Task "Csc" (TaskId:17)
+  Task Parameter:CodeAnalysisRuleSet=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset (TaskId:17)
+  Task Parameter:DebugType=full (TaskId:17)
+  Task Parameter:DefineConstants=DEBUG;TRACE (TaskId:17)
+  Task Parameter:DisabledWarnings=;1701;1702 (TaskId:17)
+  Task Parameter:EmitDebugInformation=True (TaskId:17)
+  Task Parameter:ErrorReport=prompt (TaskId:17)
+  Task Parameter:FileAlignment=512 (TaskId:17)
+  Task Parameter:HighEntropyVA=True (TaskId:17)
+  Task Parameter:NoConfig=True (TaskId:17)
+  Task Parameter:NoStandardLib=True (TaskId:17)
+  Task Parameter:Optimize=False (TaskId:17)
+  Task Parameter:OutputAssembly=obj\Debug\CSharpTemplate.dll (TaskId:17)
+  Task Parameter:Prefer32Bit=False (TaskId:17)
+  Task Parameter:
+      References=
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=Microsoft.CSharp
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  Implicit=true
+                  OriginalItemSpec=System.Core
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data.DataSetExtensions
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Data
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Net.Http
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll
+                  CopyLocal=false
+                  FrameworkFile=true
+                  FusionName=System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+                  ImageRuntime=v4.0.30319
+                  OriginalItemSpec=System.Xml.Linq
+                  Redist=Microsoft-Windows-CLRCoreComp.4.5.2
+                  ReferenceSourceTarget=ResolveAssemblyReference
+                  ResolvedFrom={TargetFrameworkDirectory}
+                  Version=4.0.0.0 (TaskId:17)
+  Task Parameter:
+      Sources=
+          Class1.cs
+          Properties\AssemblyInfo.cs
+          C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs (TaskId:17)
+  Task Parameter:SubsystemVersion=6.00 (TaskId:17)
+  Task Parameter:TargetType=Library (TaskId:17)
+  Task Parameter:UseHostCompilerIfAvailable=True (TaskId:17)
+  Task Parameter:UseSharedCompilation=True (TaskId:17)
+  Task Parameter:Utf8Output=True (TaskId:17)
+  Task Parameter:WarningLevel=4 (TaskId:17)
+  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\CSharpTemplate.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output Class1.cs Properties\AssemblyInfo.cs "C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs" (TaskId:17)
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\bin (TaskId:17)
+  Microsoft (R) Visual C# Compiler version 1.3.1.60616 (TaskId:17)
+  Copyright (C) Microsoft Corporation. All rights reserved. (TaskId:17)
+  Output Item(s): CscCommandLineArgs= (TaskId:17)
+Done executing task "Csc". (TaskId:17)
+Task "CallTarget" skipped, due to false condition; ('$(TargetsTriggeredByCompilation)' != '') was evaluated as ('' != '').
 Done building target "CoreCompile" in project "CSharpTemplate.csproj".: (TargetId:41)
 Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
 Target "AfterCompile: (TargetId:42)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
@@ -1580,9 +1706,9 @@ Done building target "AfterCompile" in project "CSharpTemplate.csproj".: (Target
 Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
 Target "CreateTfsBuildInfoFile" skipped, due to false condition; ( $(GenerateBuildInfoConfigFile)==true AND $(WebProjectOutputDir)!='') was evaluated as ( false==true AND !='').
 Target "SetBuildInfoDefaults: (TargetId:43)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "DeleteBuildInfoFile" depends on it):
-Set Property: BuildId=AutoGen_8b47ab8e-41a9-4798-b169-e25f500cec56
-Set Property: BuildLabel=AutoGen_8b47ab8e-41a9-4798-b169-e25f500cec56
-Set Property: BuildTimestamp=Tue, 20 Dec 2016 01:45:39 GMT
+Set Property: BuildId=AutoGen_2ab72287-86b6-427b-8b11-b33a11d51b9f
+Set Property: BuildLabel=AutoGen_2ab72287-86b6-427b-8b11-b33a11d51b9f
+Set Property: BuildTimestamp=Tue, 20 Dec 2016 01:46:26 GMT
 Set Property: BuildInfoPath=F:\git\CSharpTemplate\bin\Debug\
 Set Property: BuildInfoFileName=CSharpTemplate.BuildInfo.config
 Set Property: BuildInfoResourceFileName= obj\Debug\CSharpTemplate.BuildInfo.config
@@ -1633,17 +1759,17 @@ Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(Referenc
 Target "AssignTargetPaths" skipped. Previously built successfully.
 Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
 Target "GetCopyToOutputDirectoryXamlAppDefs: (TargetId:52)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "GetCopyToOutputDirectoryItems" depends on it):
-Task "AssignTargetPath" (TaskId:17)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:17)
-Done executing task "AssignTargetPath". (TaskId:17)
+Task "AssignTargetPath" (TaskId:18)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:18)
+Done executing task "AssignTargetPath". (TaskId:18)
 Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "CSharpTemplate.csproj".: (TargetId:52)
 Target "GetCopyToOutputDirectoryItems: (TargetId:53)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
 Set Property: _GCTODIKeepDuplicates=false
 Set Property: _GCTODIKeepMetadata=CopyToOutputDirectory;TargetPath
 Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
-Task "AssignTargetPath" (TaskId:18)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:18)
-Done executing task "AssignTargetPath". (TaskId:18)
+Task "AssignTargetPath" (TaskId:19)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:19)
+Done executing task "AssignTargetPath". (TaskId:19)
 Done building target "GetCopyToOutputDirectoryItems" in project "CSharpTemplate.csproj".: (TargetId:53)
 Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
 Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
@@ -1662,41 +1788,41 @@ Set Property: CreateHardLinksForCopyFilesToOutputDirectoryIfPossible=false
 Set Property: CopyBuildOutputToOutputDirectory=true
 Set Property: CopyOutputSymbolsToOutputDirectory=true
 Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "Copy" (TaskId:19)
-  Task Parameter:SourceFiles=obj\Debug\CSharpTemplate.dll (TaskId:19)
-  Task Parameter:DestinationFolder=bin\Debug\ (TaskId:19)
-  Task Parameter:SkipUnchangedFiles=True (TaskId:19)
-  Task Parameter:OverwriteReadOnlyFiles=False (TaskId:19)
-  Task Parameter:UseHardlinksIfPossible=False (TaskId:19)
-  Did not copy from file "obj\Debug\CSharpTemplate.dll" to file "bin\Debug\CSharpTemplate.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:19)
+Task "Copy" (TaskId:20)
+  Task Parameter:SourceFiles=obj\Debug\CSharpTemplate.dll (TaskId:20)
+  Task Parameter:DestinationFolder=bin\Debug\ (TaskId:20)
+  Task Parameter:SkipUnchangedFiles=True (TaskId:20)
+  Task Parameter:OverwriteReadOnlyFiles=False (TaskId:20)
+  Task Parameter:UseHardlinksIfPossible=False (TaskId:20)
+  Copying file from "obj\Debug\CSharpTemplate.dll" to "bin\Debug\CSharpTemplate.dll". (TaskId:20)
   Output Item(s): 
       MainAssembly=
           bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll (TaskId:19)
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll (TaskId:20)
   Output Item(s): 
       FileWrites=
           bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll (TaskId:19)
-Done executing task "Copy". (TaskId:19)
-Task "Message" (TaskId:20)
-  Task Parameter:Importance=High (TaskId:20)
-  Task Parameter:Text=CSharpTemplate -> F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll (TaskId:20)
-  CSharpTemplate -> F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll (TaskId:20)
-Done executing task "Message". (TaskId:20)
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll (TaskId:20)
+Done executing task "Copy". (TaskId:20)
+Task "Message" (TaskId:21)
+  Task Parameter:Importance=High (TaskId:21)
+  Task Parameter:Text=CSharpTemplate -> F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll (TaskId:21)
+  CSharpTemplate -> F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll (TaskId:21)
+Done executing task "Message". (TaskId:21)
 Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
 Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
-Task "Copy" (TaskId:21)
-  Task Parameter:SourceFiles=obj\Debug\CSharpTemplate.pdb (TaskId:21)
-  Task Parameter:DestinationFiles=bin\Debug\CSharpTemplate.pdb (TaskId:21)
-  Task Parameter:SkipUnchangedFiles=True (TaskId:21)
-  Task Parameter:OverwriteReadOnlyFiles=False (TaskId:21)
-  Task Parameter:UseHardlinksIfPossible=False (TaskId:21)
-  Did not copy from file "obj\Debug\CSharpTemplate.pdb" to file "bin\Debug\CSharpTemplate.pdb" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:21)
+Task "Copy" (TaskId:22)
+  Task Parameter:SourceFiles=obj\Debug\CSharpTemplate.pdb (TaskId:22)
+  Task Parameter:DestinationFiles=bin\Debug\CSharpTemplate.pdb (TaskId:22)
+  Task Parameter:SkipUnchangedFiles=True (TaskId:22)
+  Task Parameter:OverwriteReadOnlyFiles=False (TaskId:22)
+  Task Parameter:UseHardlinksIfPossible=False (TaskId:22)
+  Copying file from "obj\Debug\CSharpTemplate.pdb" to "bin\Debug\CSharpTemplate.pdb". (TaskId:22)
   Output Item(s): 
       FileWrites=
           bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:21)
-Done executing task "Copy". (TaskId:21)
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:22)
+Done executing task "Copy". (TaskId:22)
 Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
 Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
 Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
@@ -1711,18 +1837,11 @@ Target "_CheckForCompileOutputs" skipped. Previously built successfully.
 Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
 Target "_CleanGetCurrentAndPriorFileWrites: (TargetId:58)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "IncrementalClean" depends on it):
 Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "ReadLinesFromFile" (TaskId:22)
-  Task Parameter:File=obj\Debug\CSharpTemplate.csproj.FileListAbsolute.txt (TaskId:22)
-  Output Item(s): 
-      _CleanUnfilteredPriorFileWrites=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:22)
-Done executing task "ReadLinesFromFile". (TaskId:22)
+Task "ReadLinesFromFile" (TaskId:23)
+  Task Parameter:File=obj\Debug\CSharpTemplate.csproj.FileListAbsolute.txt (TaskId:23)
+Done executing task "ReadLinesFromFile". (TaskId:23)
 Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "ConvertToAbsolutePath" (TaskId:23)
+Task "ConvertToAbsolutePath" (TaskId:24)
   Task Parameter:
       Paths=
           C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll
@@ -1814,7 +1933,7 @@ Task "ConvertToAbsolutePath" (TaskId:23)
                   Redist=Microsoft-Windows-CLRCoreComp.4.5.2
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={TargetFrameworkDirectory}
-                  Version=4.0.0.0 (TaskId:23)
+                  Version=4.0.0.0 (TaskId:24)
   Output Item(s): 
       _ResolveAssemblyReferenceResolvedFilesAbsolute=
           C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll
@@ -1906,43 +2025,16 @@ Task "ConvertToAbsolutePath" (TaskId:23)
                   Redist=Microsoft-Windows-CLRCoreComp.4.5.2
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={TargetFrameworkDirectory}
-                  Version=4.0.0.0 (TaskId:23)
-Done executing task "ConvertToAbsolutePath". (TaskId:23)
-Added Item(s): 
-    _CleanPriorFileWrites=
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
+                  Version=4.0.0.0 (TaskId:24)
+Done executing task "ConvertToAbsolutePath". (TaskId:24)
 Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "FindUnderPath" (TaskId:24)
-  Task Parameter:Path=F:\git\CSharpTemplate (TaskId:24)
-  Task Parameter:UpdateToAbsolutePaths=True (TaskId:24)
-  Comparison path is "F:\git\CSharpTemplate". (TaskId:24)
-Done executing task "FindUnderPath". (TaskId:24)
 Task "FindUnderPath" (TaskId:25)
-  Task Parameter:Path=bin\Debug\ (TaskId:25)
-  Task Parameter:
-      Files=
-          obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          obj\Debug\CSharpTemplate.dll
-          obj\Debug\CSharpTemplate.pdb
-          bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:25)
+  Task Parameter:Path=F:\git\CSharpTemplate (TaskId:25)
   Task Parameter:UpdateToAbsolutePaths=True (TaskId:25)
-  Comparison path is "bin\Debug\". (TaskId:25)
-  Output Item(s): 
-      _CleanCurrentFileWritesInOutput=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:25)
+  Comparison path is "F:\git\CSharpTemplate". (TaskId:25)
 Done executing task "FindUnderPath". (TaskId:25)
 Task "FindUnderPath" (TaskId:26)
-  Task Parameter:Path=obj\Debug\ (TaskId:26)
+  Task Parameter:Path=bin\Debug\ (TaskId:26)
   Task Parameter:
       Files=
           obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
@@ -1953,13 +2045,33 @@ Task "FindUnderPath" (TaskId:26)
           bin\Debug\CSharpTemplate.pdb
                   OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:26)
   Task Parameter:UpdateToAbsolutePaths=True (TaskId:26)
-  Comparison path is "obj\Debug\". (TaskId:26)
+  Comparison path is "bin\Debug\". (TaskId:26)
+  Output Item(s): 
+      _CleanCurrentFileWritesInOutput=
+          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
+          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:26)
+Done executing task "FindUnderPath". (TaskId:26)
+Task "FindUnderPath" (TaskId:27)
+  Task Parameter:Path=obj\Debug\ (TaskId:27)
+  Task Parameter:
+      Files=
+          obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
+          obj\Debug\CSharpTemplate.dll
+          obj\Debug\CSharpTemplate.pdb
+          bin\Debug\CSharpTemplate.dll
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
+          bin\Debug\CSharpTemplate.pdb
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:27)
+  Task Parameter:UpdateToAbsolutePaths=True (TaskId:27)
+  Comparison path is "obj\Debug\". (TaskId:27)
   Output Item(s): 
       _CleanCurrentFileWritesInIntermediate=
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:26)
-Done executing task "FindUnderPath". (TaskId:26)
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:27)
+Done executing task "FindUnderPath". (TaskId:27)
 Added Item(s): 
     _CleanCurrentFileWritesWithNoReferences=
         F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
@@ -1970,7 +2082,7 @@ Added Item(s):
         F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
         F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
 Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "RemoveDuplicates" (TaskId:27)
+Task "RemoveDuplicates" (TaskId:28)
   Task Parameter:
       Inputs=
           F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
@@ -1979,7 +2091,7 @@ Task "RemoveDuplicates" (TaskId:27)
                   OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:27)
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:28)
   Output Item(s): 
       _CleanCurrentFileWrites=
           F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
@@ -1988,28 +2100,23 @@ Task "RemoveDuplicates" (TaskId:27)
                   OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:27)
-Done executing task "RemoveDuplicates". (TaskId:27)
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:28)
+Done executing task "RemoveDuplicates". (TaskId:28)
 Done building target "_CleanGetCurrentAndPriorFileWrites" in project "CSharpTemplate.csproj".: (TargetId:58)
 Target "IncrementalClean: (TargetId:59)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
-Task "FindUnderPath" (TaskId:28)
-  Task Parameter:Path=bin\Debug\ (TaskId:28)
-  Comparison path is "bin\Debug\". (TaskId:28)
-Done executing task "FindUnderPath". (TaskId:28)
 Task "FindUnderPath" (TaskId:29)
-  Task Parameter:Path=obj\Debug\ (TaskId:29)
-  Comparison path is "obj\Debug\". (TaskId:29)
+  Task Parameter:Path=bin\Debug\ (TaskId:29)
+  Comparison path is "bin\Debug\". (TaskId:29)
 Done executing task "FindUnderPath". (TaskId:29)
-Task "Delete" (TaskId:30)
-  Task Parameter:TreatErrorsAsWarnings=True (TaskId:30)
-Done executing task "Delete". (TaskId:30)
+Task "FindUnderPath" (TaskId:30)
+  Task Parameter:Path=obj\Debug\ (TaskId:30)
+  Comparison path is "obj\Debug\". (TaskId:30)
+Done executing task "FindUnderPath". (TaskId:30)
+Task "Delete" (TaskId:31)
+  Task Parameter:TreatErrorsAsWarnings=True (TaskId:31)
+Done executing task "Delete". (TaskId:31)
 Added Item(s): 
     _CleanRemainingFileWritesAfterIncrementalClean=
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
         F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
                 OriginalItemSpec=obj\Debug\CSharpTemplate.dll
         F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
@@ -2017,30 +2124,40 @@ Added Item(s):
         F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
         F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
         F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
-Task "RemoveDuplicates" (TaskId:31)
+Task "RemoveDuplicates" (TaskId:32)
   Task Parameter:
       Inputs=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
           F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
                   OriginalItemSpec=obj\Debug\CSharpTemplate.dll
           F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
                   OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:31)
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:32)
   Output Item(s): 
       _CleanUniqueRemainingFileWritesAfterIncrementalClean=
           F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
           F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
           F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:31)
-Done executing task "RemoveDuplicates". (TaskId:31)
-Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as ('F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll;F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb;F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache;F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll;F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb'!='F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll;F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb;F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache;F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll;F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb').
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:32)
+Done executing task "RemoveDuplicates". (TaskId:32)
+Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "WriteLinesToFile" (TaskId:33)
+  Task Parameter:File=obj\Debug\CSharpTemplate.csproj.FileListAbsolute.txt (TaskId:33)
+  Task Parameter:
+      Lines=
+          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
+          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
+                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
+          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:33)
+  Task Parameter:Overwrite=True (TaskId:33)
+Done executing task "WriteLinesToFile". (TaskId:33)
 Done building target "IncrementalClean" in project "CSharpTemplate.csproj".: (TargetId:59)
 Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
 Target "CoreBuild: (TargetId:60)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Build" depends on it):
@@ -2060,21 +2177,22 @@ Detailed Build Summary
   ============================== Build Hierarchy (IDs represent configurations) =====================================================
   Id                  : Exclusive Time   Total Time   Path (Targets)
   ----------------------------------------------------------------------------------------------------------------------------------- (TaskId:0)
-  0                   : 0.150s           0.150s       F:\git\CSharpTemplate\CSharpTemplate.csproj ()  (TaskId:0)
+  0                   : 0.211s           0.211s       F:\git\CSharpTemplate\CSharpTemplate.csproj ()  (TaskId:0)
   
   ============================== Node Utilization (IDs represent configurations) ====================================================
   Timestamp:            1        Duration   Cumulative
   ----------------------------------------------------------------------------------------------------------------------------------- (TaskId:0)
-  636177951395349754:   0        0.150s     0.150s ## (TaskId:0)
+  636177951858354458:   0        0.211s     0.211s #### (TaskId:0)
   -----------------------------------------------------------------------------------------------------------------------------------
   Utilization:          100.0    Average Utilization: 100.0 (TaskId:0)
 
 Project Performance Summary:
-       99 ms  F:\git\CSharpTemplate\CSharpTemplate.csproj   1 calls
+      169 ms  F:\git\CSharpTemplate\CSharpTemplate.csproj   1 calls
 
 Target Performance Summary:
         0 ms  BeforeCompile                              1 calls
         0 ms  _SplitProjectReferencesByFileExistence     1 calls
+        0 ms  _SetTargetFrameworkMonikerAttribute        1 calls
         0 ms  _CopySourceItemsToOutputDirectory          1 calls
         0 ms  GetInstalledSDKLocations                   1 calls
         0 ms  PrepareForRun                              1 calls
@@ -2083,6 +2201,7 @@ Target Performance Summary:
         0 ms  BeforeResGen                               1 calls
         0 ms  Build                                      1 calls
         0 ms  ResGen                                     1 calls
+        0 ms  CreateCustomManifestResourceNames          1 calls
         0 ms  AfterResGen                                1 calls
         0 ms  AfterCompile                               1 calls
         0 ms  GetTargetPath                              1 calls
@@ -2090,71 +2209,71 @@ Target Performance Summary:
         0 ms  AfterMarkupCompilePass1                    1 calls
         0 ms  _AfterCompileWinFXInternal                 1 calls
         0 ms  CoreBuild                                  1 calls
-        0 ms  CreateCustomManifestResourceNames          1 calls
+        0 ms  DeleteBuildInfoResource                    1 calls
         0 ms  DeleteBuildInfoFile                        1 calls
         0 ms  AfterCompileWinFX                          1 calls
-        0 ms  ResolveSDKReferences                       1 calls
-        0 ms  PrepareResources                           1 calls
-        0 ms  BuildOnlySettings                          1 calls
         0 ms  Compile                                    1 calls
-        0 ms  BeforeBuild                                1 calls
+        0 ms  BuildOnlySettings                          1 calls
         0 ms  SetWin32ManifestProperties                 1 calls
         0 ms  BeforeResolveReferences                    1 calls
-        0 ms  PrepareResourceNames                       1 calls
-        0 ms  AfterBuild                                 1 calls
-        0 ms  ResolveCodeAnalysisRuleSet                 1 calls
-        0 ms  _SetTargetFrameworkMonikerAttribute        1 calls
-        0 ms  _GenerateSatelliteAssemblyInputs           1 calls
         0 ms  ModifyUnitTestPlatformVersion              1 calls
+        0 ms  AfterBuild                                 1 calls
         0 ms  ImplicitlyExpandDesignTimeFacades          1 calls
-        0 ms  ValidationExtension                        1 calls
+        0 ms  PrepareResourceNames                       1 calls
+        0 ms  ExpandSDKReferences                        1 calls
         0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
-        0 ms  _GenerateCompileInputs                     1 calls
-        0 ms  CleanXsdCodeGen                            1 calls
-        0 ms  DeleteBuildInfoResource                    1 calls
-        1 ms  _CheckForCompileOutputs                    1 calls
-        1 ms  GenerateTargetFrameworkMonikerAttribute    1 calls
-        1 ms  FileClassification                         1 calls
+        0 ms  ResolveSDKReferences                       1 calls
+        0 ms  PrepareResources                           1 calls
+        0 ms  BeforeBuild                                1 calls
+        0 ms  _CheckForCompileOutputs                    1 calls
+        0 ms  ValidationExtension                        1 calls
+        0 ms  FileClassification                         1 calls
+        0 ms  _GenerateSatelliteAssemblyInputs           1 calls
         1 ms  GetCopyToOutputDirectoryItems              1 calls
-        1 ms  ExpandSDKReferences                        1 calls
-        1 ms  ExpressionBuildExtension                   1 calls
-        1 ms  ResolveProjectReferences                   1 calls
-        1 ms  CoreCompile                                1 calls
-        1 ms  SetBuildInfoDefaults                       1 calls
-        1 ms  _SetEmbeddedWin32ManifestProperties        1 calls
+        1 ms  _GenerateCompileInputs                     1 calls
+        1 ms  GenerateTargetFrameworkMonikerAttribute    1 calls
+        1 ms  CleanXsdCodeGen                            1 calls
+        1 ms  ResolveCodeAnalysisRuleSet                 1 calls
         1 ms  SplitResourcesByCulture                    1 calls
+        1 ms  _SetEmbeddedWin32ManifestProperties        1 calls
+        1 ms  ResolveProjectReferences                   1 calls
+        1 ms  SetBuildInfoDefaults                       1 calls
         1 ms  GetFrameworkPaths                          1 calls
-        1 ms  AssignTargetPaths                          1 calls
+        1 ms  PreXsdCodeGen                              1 calls
+        2 ms  AssignTargetPaths                          1 calls
         2 ms  GetReferenceAssemblyPaths                  1 calls
-        2 ms  PreXsdCodeGen                              1 calls
         2 ms  PrepareForBuild                            1 calls
-        2 ms  IncrementalClean                           1 calls
         3 ms  CoreResGen                                 1 calls
-        3 ms  CopyFilesToOutputDirectory                 1 calls
         4 ms  _CleanGetCurrentAndPriorFileWrites         1 calls
+        5 ms  CopyFilesToOutputDirectory                 1 calls
+        5 ms  IncrementalClean                           1 calls
         6 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
-       21 ms  ResolveAssemblyReferences                  1 calls
+       10 ms  ExpressionBuildExtension                   1 calls
+       22 ms  ResolveAssemblyReferences                  1 calls
+       66 ms  CoreCompile                                1 calls
 
 Task Performance Summary:
-        0 ms  ResolveCodeAnalysisRuleSet                 1 calls
         0 ms  ReadLinesFromFile                          1 calls
-        0 ms  Message                                    3 calls
-        1 ms  FindAppConfigFile                          1 calls
-        1 ms  AssignCulture                              1 calls
-        1 ms  GetFrameworkPath                           1 calls
-        1 ms  MakeDir                                    1 calls
-        1 ms  AssignTargetPath                           6 calls
+        0 ms  AssignCulture                              1 calls
+        0 ms  GetFrameworkPath                           1 calls
+        0 ms  ResolveCodeAnalysisRuleSet                 1 calls
         1 ms  Delete                                     2 calls
+        1 ms  FindAppConfigFile                          1 calls
+        1 ms  Message                                    3 calls
+        1 ms  GetReferenceAssemblyPaths                  1 calls
         1 ms  CallTarget                                 1 calls
         1 ms  RemoveDuplicates                           2 calls
+        1 ms  AssignTargetPath                           6 calls
         1 ms  ConvertToAbsolutePath                      1 calls
-        1 ms  GetReferenceAssemblyPaths                  1 calls
-        1 ms  Copy                                       2 calls
+        1 ms  MakeDir                                    1 calls
         2 ms  FindUnderPath                              5 calls
-       20 ms  ResolveAssemblyReference                   1 calls
+        3 ms  WriteLinesToFile                           1 calls
+        4 ms  Copy                                       2 calls
+       21 ms  ResolveAssemblyReference                   1 calls
+       61 ms  Csc                                        1 calls
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.16
+Time Elapsed 00:00:00.22
