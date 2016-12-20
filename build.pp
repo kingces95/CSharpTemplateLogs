@@ -5,7 +5,7 @@ The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Fi
 <?xml version="1.0" encoding="IBM437"?>
 <!--
 ============================================================================================================================================
-F:\git\CSharpTemplate\CSharpTemplate.csproj
+F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj
 ============================================================================================================================================
 -->
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="_CheckForInvalidConfigurationAndPlatform">
@@ -182,17 +182,17 @@ C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.props
 ============================================================================================================================================
   </Import>
 
-F:\git\CSharpTemplate\CSharpTemplate.csproj
+F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj
 ============================================================================================================================================
 -->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>5f7213fd-aac9-478d-a78b-58846a6282cc</ProjectGuid>
+    <ProjectGuid>fa03276b-d69a-46ec-85dc-19d42a26f55c</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpTemplate</RootNamespace>
-    <AssemblyName>CSharpTemplate</AssemblyName>
+    <RootNamespace>ReferencedProject</RootNamespace>
+    <AssemblyName>ReferencedProject</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -7423,7 +7423,7 @@ C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.targets
 ============================================================================================================================================
   </Import>
 
-F:\git\CSharpTemplate\CSharpTemplate.csproj
+F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj
 ============================================================================================================================================
 -->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

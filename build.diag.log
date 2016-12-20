@@ -1,8 +1,8 @@
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe /v:diag CSharpTemplate.csproj
-Build started 12/19/2016 1:21:00 PM.
+C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe /v:diag ReferencedProject\ReferencedProject.csproj
+Build started 12/19/2016 5:44:13 PM.
 Environment at start of build:
 ALLUSERSPROFILE = C:\ProgramData
 APPDATA = C:\Users\kingc\AppData\Roaming
@@ -107,7 +107,7 @@ The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "F:\git\CSharpTemplate\CSharpTemplate.csproj" on node 1 (default targets).
+Project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" on node 1 (default targets).
 Initial Properties:
 _AfterCompileWinFXInternalDependsOn = 
         PrepareResourcesForSatelliteAssemblies;
@@ -116,28 +116,28 @@ _AfterCompileWinFXInternalDependsOn =
     
 _CompileTargetNameForLocalType = _CompileTemporaryAssembly
 _DebugSymbolsProduced = true
-_DeploymentApplicationManifestIdentity = Native.CSharpTemplate
+_DeploymentApplicationManifestIdentity = Native.ReferencedProject
 _DeploymentBuiltUpdateInterval = 0
 _DeploymentBuiltUpdateIntervalUnits = Days
-_DeploymentDeployManifestIdentity = CSharpTemplate.application
+_DeploymentDeployManifestIdentity = ReferencedProject.application
 _DeploymentFileMappingExtension = 
-_DeploymentTargetApplicationManifestFileName = Native.CSharpTemplate.manifest
+_DeploymentTargetApplicationManifestFileName = Native.ReferencedProject.manifest
 _DeploymentUrl = 
 _DocumentationFileProduced = false
 _GenerateAppxManifestDependsOn = ;_FixVCLibs120References
-_GenerateBindingRedirectsIntermediateAppConfig = obj\Debug\CSharpTemplate.csproj.CSharpTemplate.dll.config
+_GenerateBindingRedirectsIntermediateAppConfig = obj\Debug\ReferencedProject.csproj.ReferencedProject.dll.config
 _GetChildProjectCopyToOutputDirectoryItems = true
 _NuGetRuntimeIdentifierWithoutAot = win
 _OriginalConfiguration = Debug
 _OriginalPlatform = AnyCPU
 _ProjectDefaultTargets = Build
-_ProjectSpecificProjectJsonFile = CSharpTemplate.project.json
+_ProjectSpecificProjectJsonFile = ReferencedProject.project.json
 _RequireMCPass2ForMainAssembly = false
 _RequireMCPass2ForSatelliteAssemblyOnly = false
 _ResolveReferenceDependencies = false
-_ResourceNameInMainAssembly = CSharpTemplate.g.resources
+_ResourceNameInMainAssembly = ReferencedProject.g.resources
 _SGenDllCreated = false
-_SGenDllName = CSharpTemplate.XmlSerializers.dll
+_SGenDllName = ReferencedProject.XmlSerializers.dll
 _SGenGenerateSerializationAssembliesConfig = Off
 AddAdditionalExplicitAssemblyReferences = true
 AddBuildInfoToAssembly = false
@@ -158,7 +158,7 @@ AlwaysUseNumericalSuffixInItemNames = true
 APPDATA = C:\Users\kingc\AppData\Roaming
 AppDesignerFolder = Properties
 AssemblyFoldersSuffix = AssemblyFoldersEx
-AssemblyName = CSharpTemplate
+AssemblyName = ReferencedProject
 AssemblySearchPaths = 
       {CandidateAssemblyFiles};
       ;
@@ -210,7 +210,7 @@ CleanDependsOn =
     ;
       EntityClean;
     
-CleanFile = CSharpTemplate.csproj.FileListAbsolute.txt
+CleanFile = ReferencedProject.csproj.FileListAbsolute.txt
 CLIENTNAME = MACBOOK-AIR
 CodeAnalysisApplyLogFileXsl = false
 CodeAnalysisFailOnMissingRules = false
@@ -219,8 +219,8 @@ CodeAnalysisGenerateSuccessFile = true
 CodeAnalysisIgnoreGeneratedCode = true
 CodeAnalysisIgnoreInvalidTargets = true
 CodeAnalysisIgnoreMissingIndirectReferences = false
-CodeAnalysisInputAssembly = bin\Debug\CSharpTemplate.dll
-CodeAnalysisLogFile = bin\Debug\CSharpTemplate.dll.CodeAnalysisLog.xml
+CodeAnalysisInputAssembly = bin\Debug\ReferencedProject.dll
+CodeAnalysisLogFile = bin\Debug\ReferencedProject.dll.CodeAnalysisLog.xml
 CodeAnalysisModuleSuppressionsFile = GlobalSuppressions.cs
 CodeAnalysisOutputToConsole = false
 CodeAnalysisOverrideRuleVisibilities = false
@@ -232,7 +232,7 @@ CodeAnalysisRuleSetDirectories = ;C:\Program Files (x86)\Microsoft Visual Studio
 CodeAnalysisSaveMessagesToReport = Active
 CodeAnalysisSearchGlobalAssemblyCache = true
 CodeAnalysisStaticAnalysisDirectory = C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\
-CodeAnalysisSucceededFile = bin\Debug\CSharpTemplate.dll.lastcodeanalysissucceeded
+CodeAnalysisSucceededFile = bin\Debug\ReferencedProject.dll.lastcodeanalysissucceeded
 CodeAnalysisSummary = false
 CodeAnalysisTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\CodeAnalysis\Microsoft.CodeAnalysis.targets
 CodeAnalysisTimeout = 120
@@ -355,9 +355,9 @@ FakesGenerateBeforeBuildDependsOn =
       BuildFakesAssemblies;
     
 FakesImported = true
-FakesIntermediatePath = F:\git\CSharpTemplate\obj\Debug\Fakes
+FakesIntermediatePath = F:\git\CSharpTemplate\ReferencedProject\obj\Debug\Fakes
 FakesMSBuildPath = C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe
-FakesOutputPath = F:\git\CSharpTemplate\FakesAssemblies
+FakesOutputPath = F:\git\CSharpTemplate\ReferencedProject\FakesAssemblies
 FakesTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\Fakes\Microsoft.QualityTools.Testing.Fakes.targets
 FakesTasks = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\Fakes\Microsoft.QualityTools.Testing.Fakes.Tasks.dll
 FakesToolsPath = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\Fakes
@@ -471,7 +471,7 @@ MaxTargetPath = 100
 MergedOutputCodeAnalysisFile = vc.nativecodeanalysis.all.xml
 MicrosoftCommonPropsHasBeenImported = true
 MsAppxPackageTargets = C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\AppxPackage\Microsoft.AppXPackage.Targets
-MSBuildAllProjects = ;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.props;F:\git\CSharpTemplate\CSharpTemplate.csproj;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Xaml.targets
+MSBuildAllProjects = ;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.props;F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets;C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Xaml.targets
 MSBuildAssemblyVersion = 14.0
 MSBuildBinPath = C:\Program Files (x86)\MSBuild\14.0\bin
 MSBuildExtensionsPath = C:\Program Files (x86)\MSBuild
@@ -484,12 +484,12 @@ MSBuildLoadMicrosoftTargetsReadOnly = true
 MSBuildNodeCount = 1
 MSBuildProgramFiles32 = C:\Program Files (x86)
 MSBuildProjectDefaultTargets = Build
-MSBuildProjectDirectory = F:\git\CSharpTemplate
-MSBuildProjectDirectoryNoRoot = git\CSharpTemplate
+MSBuildProjectDirectory = F:\git\CSharpTemplate\ReferencedProject
+MSBuildProjectDirectoryNoRoot = git\CSharpTemplate\ReferencedProject
 MSBuildProjectExtension = .csproj
-MSBuildProjectFile = CSharpTemplate.csproj
-MSBuildProjectFullPath = F:\git\CSharpTemplate\CSharpTemplate.csproj
-MSBuildProjectName = CSharpTemplate
+MSBuildProjectFile = ReferencedProject.csproj
+MSBuildProjectFullPath = F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj
+MSBuildProjectName = ReferencedProject
 MSBuildRuntimeVersion = 4.0.30319
 MSBuildStartupDirectory = F:\git\CSharpTemplate
 MSBuildToolsPath = C:\Program Files (x86)\MSBuild\14.0\bin
@@ -581,18 +581,18 @@ ProjectDesignTimeAssemblyResolutionSearchPaths =
       {TargetFrameworkDirectory};
       {Registry:Software\Microsoft\.NETFramework,v4.5.2,AssemblyFoldersEx};
       {RawFileName};
-      F:\git\CSharpTemplate\bin\Debug\
+      F:\git\CSharpTemplate\ReferencedProject\bin\Debug\
     
-ProjectDir = F:\git\CSharpTemplate\
+ProjectDir = F:\git\CSharpTemplate\ReferencedProject\
 ProjectExt = .csproj
-ProjectFileName = CSharpTemplate.csproj
+ProjectFileName = ReferencedProject.csproj
 ProjectFlavor = Client
-ProjectGuid = 5f7213fd-aac9-478d-a78b-58846a6282cc
+ProjectGuid = fa03276b-d69a-46ec-85dc-19d42a26f55c
 ProjectLockFile = project.lock.json
-ProjectName = CSharpTemplate
+ProjectName = ReferencedProject
 ProjectNSettingsTargets = C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\Microsoft.NetNative.Settings.targets
 ProjectNTargets = C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\Microsoft.NetNative.targets
-ProjectPath = F:\git\CSharpTemplate\CSharpTemplate.csproj
+ProjectPath = F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj
 PROMPT = $p $g
 PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 PUBLIC = C:\Users\Public
@@ -671,10 +671,10 @@ ResolveSDKReferencesDependsOn =
       GetInstalledSDKLocations
     
 RootDir = F:\git\xft\
-RootNamespace = CSharpTemplate
+RootNamespace = ReferencedProject
 RunAfterInstall = true
 RunCodeAnalysisDependsOn = ;Compile
-RunCodeAnalysisInputs = bin\Debug\CSharpTemplate.dll
+RunCodeAnalysisInputs = bin\Debug\ReferencedProject.dll
 RunDependsOn = 
 RunNativeCodeAnalysisInputs = 
 SatelliteDllsProjectOutputGroupDependsOn = PrepareForBuild;PrepareResourceNames
@@ -703,22 +703,22 @@ SubsystemVersion = 6.00
 SystemDrive = C:
 SystemRoot = C:\WINDOWS
 TargetCulture = *
-TargetDeployManifestFileName = CSharpTemplate.application
-TargetDir = F:\git\CSharpTemplate\bin\Debug\
+TargetDeployManifestFileName = ReferencedProject.application
+TargetDir = F:\git\CSharpTemplate\ReferencedProject\bin\Debug\
 TargetedFrameworkDir = @(_TargetedFrameworkDirectoryItem)
 TargetedRuntimeVersion = v4.0.30319
 TargetedSDKArchitecture = msil
 TargetedSDKConfiguration = Debug
 TargetExt = .dll
-TargetFileName = CSharpTemplate.dll
+TargetFileName = ReferencedProject.dll
 TargetFrameworkAsMSBuildRuntime = CurrentRuntime
 TargetFrameworkIdentifier = .NETFramework
 TargetFrameworkMoniker = .NETFramework,Version=v4.5.2
 TargetFrameworkMonikerAssemblyAttributesPath = C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs
 TargetFrameworkSDKToolsDirectory = C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\
 TargetFrameworkVersion = v4.5.2
-TargetName = CSharpTemplate
-TargetPath = F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
+TargetName = ReferencedProject
+TargetPath = F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
 TargetPlatformDisplayName = Windows 7.0
 TargetPlatformIdentifier = Windows
 TargetPlatformMoniker = Windows,Version=7.0
@@ -781,73 +781,73 @@ XamlBuildTaskAssemblyName = XamlBuildTask, Version=4.0.0.0, Culture=neutral, Pub
 XamlBuildTaskLocation = C:\Windows\Microsoft.NET\Framework\v4.0.30319\
 XamlBuildTaskPath = C:\Windows\Microsoft.NET\Framework\v4.0.30319\
 XamlDebuggingInformation = true
-XamlGenCodeFileNames = CSharpTemplate.csproj.XamlGeneratedCodeFileListAbsolute.txt
-XamlGenMarkupFileNames = CSharpTemplate.csproj.XamlGeneratedXamlFileListAbsolute.txt
-XamlPass2FlagFile = CSharpTemplate.csproj.XamlPass2Flag.txt
+XamlGenCodeFileNames = ReferencedProject.csproj.XamlGeneratedCodeFileListAbsolute.txt
+XamlGenMarkupFileNames = ReferencedProject.csproj.XamlGeneratedXamlFileListAbsolute.txt
+XamlPass2FlagFile = ReferencedProject.csproj.XamlPass2Flag.txt
 XamlRequiresCompilationPass2 = false
-XamlTemporaryAssemblyName = CSharpTemplate
+XamlTemporaryAssemblyName = ReferencedProject
 YieldDuringToolExecution = true
 
 Initial Items:
 _ApplicationManifestFinal
-    bin\Debug\Native.CSharpTemplate.manifest
-        TargetPath = Native.CSharpTemplate.manifest
+    bin\Debug\Native.ReferencedProject.manifest
+        TargetPath = Native.ReferencedProject.manifest
 _DebugSymbolsIntermediatePath
-    obj\Debug\CSharpTemplate.pdb
+    obj\Debug\ReferencedProject.pdb
 _DebugSymbolsOutputPath
-    bin\Debug\CSharpTemplate.pdb
+    bin\Debug\ReferencedProject.pdb
 _DeploymentManifestEntryPoint
-    obj\Debug\CSharpTemplate.dll
-        TargetPath = CSharpTemplate.dll
+    obj\Debug\ReferencedProject.dll
+        TargetPath = ReferencedProject.dll
 _ExplicitReference
     C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
 _OutputPathItem
     bin\Debug\
 _ResolveComReferenceCache
-    obj\Debug\CSharpTemplate.csproj.ResolveComReference.cache
+    obj\Debug\ReferencedProject.csproj.ResolveComReference.cache
 _UnmanagedRegistrationCache
-    obj\CSharpTemplate.csproj.UnmanagedRegistration.cache
+    obj\ReferencedProject.csproj.UnmanagedRegistration.cache
 AppConfigFileDestination
-    bin\Debug\CSharpTemplate.dll.config
+    bin\Debug\ReferencedProject.dll.config
 ApplicationManifest
-    obj\Debug\Native.CSharpTemplate.manifest
-        TargetPath = Native.CSharpTemplate.manifest
+    obj\Debug\Native.ReferencedProject.manifest
+        TargetPath = Native.ReferencedProject.manifest
 AvailableItemName
     AdditionalFiles
     CodeAnalysisDictionary
     EntityDeploy
     Fakes
 BuiltProjectOutputGroupKeyOutput
-    F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
+    F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
         IsKeyOutput = true
-        FinalOutputPath = F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-        TargetPath = CSharpTemplate.dll
+        FinalOutputPath = F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+        TargetPath = ReferencedProject.dll
 Clean
-    obj\Debug\\TempCA\CSharpTemplate.dll
-    obj\Debug\\TempCA\CSharpTemplate.pdb
+    obj\Debug\\TempCA\ReferencedProject.dll
+    obj\Debug\\TempCA\ReferencedProject.pdb
 Compile
     Class1.cs
     Properties\AssemblyInfo.cs
 DebugSymbolsProjectOutputGroupOutput
-    F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
-        FinalOutputPath = F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-        TargetPath = CSharpTemplate.pdb
+    F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb
+        FinalOutputPath = F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+        TargetPath = ReferencedProject.pdb
 DeployManifest
-    obj\Debug\CSharpTemplate.application
-        TargetPath = CSharpTemplate.application
+    obj\Debug\ReferencedProject.application
+        TargetPath = ReferencedProject.application
 IntermediateAssembly
-    obj\Debug\CSharpTemplate.dll
+    obj\Debug\ReferencedProject.dll
 NuGetPreprocessorValue
     assemblyname
-        Value = CSharpTemplate
+        Value = ReferencedProject
     filename
-        Value = CSharpTemplate.csproj
+        Value = ReferencedProject.csproj
     fullpath
-        Value = F:\git\CSharpTemplate
+        Value = F:\git\CSharpTemplate\ReferencedProject
     outputfilename
-        Value = CSharpTemplate.dll
+        Value = ReferencedProject.dll
     rootnamespace
-        Value = CSharpTemplate
+        Value = ReferencedProject
 ProjectCapability
     AllTargetOutputGroups
     AssemblyReferences
@@ -923,9 +923,9 @@ XamlBuildTaskTypeGenerationExtensionName
         Visible = false
 
 Building with tools version "14.0".
-Target "_CheckForInvalidConfigurationAndPlatform: (TargetId:2)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (entry point):
-Set Property: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'CSharpTemplate.csproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='AnyCPU'.
-Set Property: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'CSharpTemplate.csproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='AnyCPU'.  You may be seeing this message because you are trying to build a project without a solution file, and have specified a non-default Configuration or Platform that doesn't exist for this project.
+Target "_CheckForInvalidConfigurationAndPlatform: (TargetId:2)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (entry point):
+Set Property: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'ReferencedProject.csproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='AnyCPU'.
+Set Property: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'ReferencedProject.csproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='AnyCPU'.  You may be seeing this message because you are trying to build a project without a solution file, and have specified a non-default Configuration or Platform that doesn't exist for this project.
 Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
 Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
 Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
@@ -942,14 +942,14 @@ Done executing task "Message". (TaskId:3)
 Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
 Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
 Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj\Debug\' != '' and !HasTrailingSlash('obj\Debug\')).
-Done building target "_CheckForInvalidConfigurationAndPlatform" in project "CSharpTemplate.csproj".: (TargetId:2)
+Done building target "_CheckForInvalidConfigurationAndPlatform" in project "ReferencedProject.csproj".: (TargetId:2)
 Target "EntityDeploy" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
-Target "BeforeBuild: (TargetId:3)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Build" depends on it):
-Done building target "BeforeBuild" in project "CSharpTemplate.csproj".: (TargetId:3)
-Target "BuildOnlySettings: (TargetId:4)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
+Target "BeforeBuild: (TargetId:3)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Build" depends on it):
+Done building target "BeforeBuild" in project "ReferencedProject.csproj".: (TargetId:3)
+Target "BuildOnlySettings: (TargetId:4)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
 Set Property: BuildingProject=true
-Done building target "BuildOnlySettings" in project "CSharpTemplate.csproj".: (TargetId:4)
-Target "GetFrameworkPaths: (TargetId:5)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareForBuild" depends on it):
+Done building target "BuildOnlySettings" in project "ReferencedProject.csproj".: (TargetId:4)
+Target "GetFrameworkPaths: (TargetId:5)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareForBuild" depends on it):
 Added Item(s): _TargetFramework40DirectoryItem=C:\Windows\Microsoft.NET\Framework\v4.0.30319
 Added Item(s): _TargetFramework35DirectoryItem=C:\Windows\Microsoft.NET\Framework\v3.5
 Added Item(s): _TargetFramework30DirectoryItem=C:\Windows\Microsoft.NET\Framework\v3.0
@@ -959,9 +959,9 @@ Added Item(s): _CombinedTargetFrameworkDirectoriesItem=C:\Windows\Microsoft.NET\
 Set Property: TargetFrameworkDirectory=C:\Windows\Microsoft.NET\Framework\v4.0.30319
 Set Property: TargetFrameworkSDKDirectory=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\
 Added Item(s): _TargetFrameworkSDKDirectoryItem=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\
-Done building target "GetFrameworkPaths" in project "CSharpTemplate.csproj".: (TargetId:5)
+Done building target "GetFrameworkPaths" in project "ReferencedProject.csproj".: (TargetId:5)
 Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
-Target "GetReferenceAssemblyPaths: (TargetId:6)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareForBuild" depends on it):
+Target "GetReferenceAssemblyPaths: (TargetId:6)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareForBuild" depends on it):
 Set Property: TargetFrameworkDirectory=
 Using "GetReferenceAssemblyPaths" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "GetReferenceAssemblyPaths" (TaskId:4)
@@ -975,12 +975,12 @@ Set Property: RemoveAssemblyFoldersIfNoTargetFramework=true
 Added Item(s): DesignTimeFacadeDirectoryRoots=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\
 Added Item(s): DesignTimeFacadeDirectories=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\
 Set Property: TargetFrameworkDirectory=C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\;;;C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\
-Done building target "GetReferenceAssemblyPaths" in project "CSharpTemplate.csproj".: (TargetId:6)
+Done building target "GetReferenceAssemblyPaths" in project "ReferencedProject.csproj".: (TargetId:6)
 Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
-Target "PrepareForBuild: (TargetId:7)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
+Target "PrepareForBuild: (TargetId:7)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
 Using "FindAppConfigFile" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "FindAppConfigFile" (TaskId:5)
-  Task Parameter:TargetPath=CSharpTemplate.dll.config (TaskId:5)
+  Task Parameter:TargetPath=ReferencedProject.dll.config (TaskId:5)
   Output Item(s): AppConfigWithTargetPath= (TaskId:5)
 Done executing task "FindAppConfigFile". (TaskId:5)
 Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
@@ -990,49 +990,49 @@ Task "MakeDir" (TaskId:6)
           bin\Debug\
           obj\Debug\ (TaskId:6)
 Done executing task "MakeDir". (TaskId:6)
-Done building target "PrepareForBuild" in project "CSharpTemplate.csproj".: (TargetId:7)
+Done building target "PrepareForBuild" in project "ReferencedProject.csproj".: (TargetId:7)
 Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
-Target "BeforeResolveReferences: (TargetId:8)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveReferences" depends on it):
-Done building target "BeforeResolveReferences" in project "CSharpTemplate.csproj".: (TargetId:8)
+Target "BeforeResolveReferences: (TargetId:8)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveReferences" depends on it):
+Done building target "BeforeResolveReferences" in project "ReferencedProject.csproj".: (TargetId:8)
 Target "AssignProjectConfiguration" skipped, due to false condition; ('$(CurrentSolutionConfigurationContents)' != '' or '@(ProjectReference)'!='') was evaluated as ('' != '' or ''!='').
 Target "AssignProjectConfiguration" skipped, due to false condition; ('$(CurrentSolutionConfigurationContents)' != '' or '@(ProjectReference)'!='') was evaluated as ('' != '' or ''!='').
-Target "_SplitProjectReferencesByFileExistence: (TargetId:9)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveProjectReferences" depends on it):
+Target "_SplitProjectReferencesByFileExistence: (TargetId:9)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveProjectReferences" depends on it):
 Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as (''=='true' and ''!='').
-Done building target "_SplitProjectReferencesByFileExistence" in project "CSharpTemplate.csproj".: (TargetId:9)
-Target "ResolveProjectReferences: (TargetId:10)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveReferences" depends on it):
+Done building target "_SplitProjectReferencesByFileExistence" in project "ReferencedProject.csproj".: (TargetId:9)
+Target "ResolveProjectReferences: (TargetId:10)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveReferences" depends on it):
 Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '14.0' != '10.0' and '' != '').
 Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('' == 'true' or 'true' != 'true') and '14.0' == '10.0' and '' != '').
 Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and '' != 'true' and 'true' == 'true' and '' != '').
 Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
 Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
-Done building target "ResolveProjectReferences" in project "CSharpTemplate.csproj".: (TargetId:10)
+Done building target "ResolveProjectReferences" in project "ReferencedProject.csproj".: (TargetId:10)
 Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
 Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
 Target "GetFrameworkPaths" skipped. Previously built successfully.
 Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
 Target "PrepareForBuild" skipped. Previously built successfully.
-Target "GetInstalledSDKLocations: (TargetId:11)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveSDKReferences" depends on it):
+Target "GetInstalledSDKLocations: (TargetId:11)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveSDKReferences" depends on it):
 Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
 Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindows81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindows81)' != '' and '$(TargetPlatformVersionWindows81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
 Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindowsPhone81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindowsPhone81)' != '' and '$(TargetPlatformVersionWindowsPhone81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
-Done building target "GetInstalledSDKLocations" in project "CSharpTemplate.csproj".: (TargetId:11)
-Target "ModifyUnitTestPlatformVersion: (TargetId:12)" in file "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\Windows.8.1.UT_SDKReference.props" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveSDKReferences" depends on it):
-Done building target "ModifyUnitTestPlatformVersion" in project "CSharpTemplate.csproj".: (TargetId:12)
-Target "ResolveSDKReferences: (TargetId:13)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveAssemblyReferences" depends on it):
+Done building target "GetInstalledSDKLocations" in project "ReferencedProject.csproj".: (TargetId:11)
+Target "ModifyUnitTestPlatformVersion: (TargetId:12)" in file "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\Windows.8.1.UT_SDKReference.props" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveSDKReferences" depends on it):
+Done building target "ModifyUnitTestPlatformVersion" in project "ReferencedProject.csproj".: (TargetId:12)
+Target "ResolveSDKReferences: (TargetId:13)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveAssemblyReferences" depends on it):
 Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
-Done building target "ResolveSDKReferences" in project "CSharpTemplate.csproj".: (TargetId:13)
+Done building target "ResolveSDKReferences" in project "ReferencedProject.csproj".: (TargetId:13)
 Target "ResolveSDKReferences" skipped. Previously built successfully.
-Target "ExpandSDKReferences: (TargetId:14)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveAssemblyReferences" depends on it):
+Target "ExpandSDKReferences: (TargetId:14)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveAssemblyReferences" depends on it):
 Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
-Done building target "ExpandSDKReferences" in project "CSharpTemplate.csproj".: (TargetId:14)
+Done building target "ExpandSDKReferences" in project "ReferencedProject.csproj".: (TargetId:14)
 Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('project.lock.json')).
 Target "FakesGenerateBeforeBuild" skipped, due to false condition; (@(Fakes) != '' AND $(BuildingProject)) was evaluated as ( != '' AND true).
-Target "ResolveAssemblyReferences: (TargetId:15)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveReferences" depends on it):
+Target "ResolveAssemblyReferences: (TargetId:15)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveReferences" depends on it):
 Added Item(s): 
     _ReferenceInstalledAssemblyDirectory=
         C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\
         C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\
-Set Property: ResolveAssemblyReferencesStateFile=obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
+Set Property: ResolveAssemblyReferencesStateFile=obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
 Set Property: ResolveAssemblyReferencesSilent=false
 Set Property: ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch=Warning
 Removed Item(s): Reference=System.Core
@@ -1088,7 +1088,7 @@ Task "ResolveAssemblyReference" (TaskId:7)
   Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.5.2 (TaskId:7)
   Task Parameter:TargetFrameworkMonikerDisplayName=.NET Framework 4.5.2 (TaskId:7)
   Task Parameter:TargetedRuntimeVersion=v4.0.30319 (TaskId:7)
-  Task Parameter:StateFile=obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache (TaskId:7)
+  Task Parameter:StateFile=obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache (TaskId:7)
   Task Parameter:FullTargetFrameworkSubsetNames=Full (TaskId:7)
   Task Parameter:FullFrameworkFolders=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\ (TaskId:7)
   Task Parameter:WarnOrErrorOnTargetArchitectureMismatch=Warning (TaskId:7)
@@ -1143,7 +1143,7 @@ Task "ResolveAssemblyReference" (TaskId:7)
   TargetProcessorArchitecture: (TaskId:7)
       msil (TaskId:7)
   StateFile: (TaskId:7)
-      obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache (TaskId:7)
+      obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache (TaskId:7)
   InstalledAssemblySubsetTables: (TaskId:7)
   IgnoreInstalledAssemblySubsetTable: (TaskId:7)
       False (TaskId:7)
@@ -1401,40 +1401,40 @@ Task "ResolveAssemblyReference" (TaskId:7)
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={TargetFrameworkDirectory}
                   Version=4.0.0.0 (TaskId:7)
-  Output Item(s): FileWrites=obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache (TaskId:7)
+  Output Item(s): FileWrites=obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache (TaskId:7)
   Output Property: DependsOnSystemRuntime=False (TaskId:7)
 Done executing task "ResolveAssemblyReference". (TaskId:7)
-Done building target "ResolveAssemblyReferences" in project "CSharpTemplate.csproj".: (TargetId:15)
+Done building target "ResolveAssemblyReferences" in project "ReferencedProject.csproj".: (TargetId:15)
 Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
-Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and '' == 'true' and Exists('obj\Debug\CSharpTemplate.csproj.CSharpTemplate.dll.config')).
+Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and '' == 'true' and Exists('obj\Debug\ReferencedProject.csproj.ReferencedProject.dll.config')).
 Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
-Target "AfterResolveReferences: (TargetId:16)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveReferences" depends on it):
-Done building target "AfterResolveReferences" in project "CSharpTemplate.csproj".: (TargetId:16)
+Target "AfterResolveReferences: (TargetId:16)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveReferences" depends on it):
+Done building target "AfterResolveReferences" in project "ReferencedProject.csproj".: (TargetId:16)
 Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
-Target "ImplicitlyExpandDesignTimeFacades: (TargetId:17)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResolveReferences" depends on it):
+Target "ImplicitlyExpandDesignTimeFacades: (TargetId:17)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResolveReferences" depends on it):
 Task "Message" skipped, due to false condition; ('%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades') was evaluated as ('{TargetFrameworkDirectory}' == 'ImplicitlyExpandDesignTimeFacades').
 Task "Message" skipped, due to false condition; ('%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades') was evaluated as ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll' == 'ImplicitlyExpandDesignTimeFacades').
-Done building target "ImplicitlyExpandDesignTimeFacades" in project "CSharpTemplate.csproj".: (TargetId:17)
+Done building target "ImplicitlyExpandDesignTimeFacades" in project "ReferencedProject.csproj".: (TargetId:17)
 Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
-Target "ResolveReferences: (TargetId:18)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
-Done building target "ResolveReferences" in project "CSharpTemplate.csproj".: (TargetId:18)
+Target "ResolveReferences: (TargetId:18)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
+Done building target "ResolveReferences" in project "ReferencedProject.csproj".: (TargetId:18)
 Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('project.lock.json')).
-Target "ValidationExtension: (TargetId:19)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WorkflowBuildExtensions.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResources" depends on it):
+Target "ValidationExtension: (TargetId:19)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WorkflowBuildExtensions.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResources" depends on it):
 Task "WorkflowBuildMessageTask" skipped, due to false condition; ('$(SkipWorkflowValidation)'!='' and '$(SkipWorkflowValidation)'!='true' and '$(SkipWorkflowValidation)'!='false') was evaluated as (''!='' and ''!='true' and ''!='false').
 Added Item(s): 
     XamlBuildTaskTypeInspectionExtensionName=
         Microsoft.Activities.Build.Validation.ValidationBuildExtension
                 AssemblyName=Microsoft.Activities.Build, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
                 Visible=false
-Done building target "ValidationExtension" in project "CSharpTemplate.csproj".: (TargetId:19)
-Target "ExpressionBuildExtension: (TargetId:20)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WorkflowBuildExtensions.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResources" depends on it):
+Done building target "ValidationExtension" in project "ReferencedProject.csproj".: (TargetId:19)
+Target "ExpressionBuildExtension: (TargetId:20)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WorkflowBuildExtensions.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResources" depends on it):
 Task "WorkflowBuildMessageTask" skipped, due to false condition; ('$(DisableWorkflowCompiledExpressions)'!='' and '$(DisableWorkflowCompiledExpressions)'!='true' and '$(DisableWorkflowCompiledExpressions)'!='false') was evaluated as (''!='' and ''!='true' and ''!='false').
 Added Item(s): 
     XamlBuildTaskTypeInspectionExtensionName=
         Microsoft.Activities.Build.Expressions.ExpressionsBuildExtension
                 AssemblyName=Microsoft.Activities.Build, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
                 Visible=false
-Done building target "ExpressionBuildExtension" in project "CSharpTemplate.csproj".: (TargetId:20)
+Done building target "ExpressionBuildExtension" in project "ReferencedProject.csproj".: (TargetId:20)
 Target "XamlMarkupCompilePass1" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
 Target "XamlMarkupCompileReadGeneratedFileList" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
 Target "XamlMarkupCompileAddFilesGenerated" skipped, due to false condition; ('@(XamlPage)' != '' or '@(XamlAppDef)' != '') was evaluated as ('' != '' or '' != '').
@@ -1444,34 +1444,34 @@ Target "XamlMarkupCompileAddExtensionFilesGenerated" skipped, due to false condi
 Target "AddDeferredValidationErrorsFileToFileWrites" skipped, due to false condition; (Exists('$(DeferredValidationErrorsFileName)')) was evaluated as (Exists('obj\Debug\\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml')).
 Target "ReportValidationBuildExtensionErrors" skipped, due to false condition; ('$(SkipWorkflowValidation)' != 'true' and ('@(XamlPage)' != '' or '@(XamlAppDef)' != '')) was evaluated as ('' != 'true' and ('' != '' or '' != '')).
 Target "MarkupCompilePass1" skipped, due to false condition; ('@(Page)' != '' or '@(ApplicationDefinition)' != '' ) was evaluated as ('' != '' or '' != '' ).
-Target "AfterMarkupCompilePass1: (TargetId:21)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResources" depends on it):
-Done building target "AfterMarkupCompilePass1" in project "CSharpTemplate.csproj".: (TargetId:21)
+Target "AfterMarkupCompilePass1: (TargetId:21)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResources" depends on it):
+Done building target "AfterMarkupCompilePass1" in project "ReferencedProject.csproj".: (TargetId:21)
 Target "MarkupCompilePass2ForMainAssembly" skipped, due to false condition; ('$(_RequireMCPass2ForMainAssembly)' == 'true' ) was evaluated as ('false' == 'true' ).
-Target "FileClassification: (TargetId:22)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResources" depends on it):
+Target "FileClassification: (TargetId:22)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResources" depends on it):
 Task "FileClassifier" skipped, due to false condition; ('@(GeneratedBaml)' != '' or '@(Resource)' != '' or '@(Font)' != '') was evaluated as ('' != '' or '' != '' or '' != '').
 Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
 Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true') was evaluated as (''=='true').
-Done building target "FileClassification" in project "CSharpTemplate.csproj".: (TargetId:22)
+Done building target "FileClassification" in project "ReferencedProject.csproj".: (TargetId:22)
 Target "MainResourcesGeneration" skipped, due to false condition; ('@(MainEmbeddedFiles)' != '') was evaluated as ('' != '').
 Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
-Target "AssignTargetPaths: (TargetId:23)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResourceNames" depends on it):
+Target "AssignTargetPaths: (TargetId:23)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResourceNames" depends on it):
 Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "AssignTargetPath" (TaskId:8)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:8)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate\ReferencedProject (TaskId:8)
 Done executing task "AssignTargetPath". (TaskId:8)
 Task "AssignTargetPath" (TaskId:9)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:9)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate\ReferencedProject (TaskId:9)
 Done executing task "AssignTargetPath". (TaskId:9)
 Task "AssignTargetPath" (TaskId:10)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:10)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate\ReferencedProject (TaskId:10)
 Done executing task "AssignTargetPath". (TaskId:10)
 Task "AssignTargetPath" (TaskId:11)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:11)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate\ReferencedProject (TaskId:11)
 Done executing task "AssignTargetPath". (TaskId:11)
 Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
-Done building target "AssignTargetPaths" in project "CSharpTemplate.csproj".: (TargetId:23)
+Done building target "AssignTargetPaths" in project "ReferencedProject.csproj".: (TargetId:23)
 Target "AssignTargetPaths" skipped. Previously built successfully.
-Target "SplitResourcesByCulture: (TargetId:24)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResourceNames" depends on it):
+Target "SplitResourcesByCulture: (TargetId:24)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResourceNames" depends on it):
 Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
 Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
 Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
@@ -1479,37 +1479,37 @@ Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') 
 Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "AssignCulture" (TaskId:12)
 Done executing task "AssignCulture". (TaskId:12)
-Done building target "SplitResourcesByCulture" in project "CSharpTemplate.csproj".: (TargetId:24)
+Done building target "SplitResourcesByCulture" in project "ReferencedProject.csproj".: (TargetId:24)
 Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
-Target "CreateCustomManifestResourceNames: (TargetId:25)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResourceNames" depends on it):
-Done building target "CreateCustomManifestResourceNames" in project "CSharpTemplate.csproj".: (TargetId:25)
-Target "PrepareResourceNames: (TargetId:26)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResources" depends on it):
-Done building target "PrepareResourceNames" in project "CSharpTemplate.csproj".: (TargetId:26)
+Target "CreateCustomManifestResourceNames: (TargetId:25)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResourceNames" depends on it):
+Done building target "CreateCustomManifestResourceNames" in project "ReferencedProject.csproj".: (TargetId:25)
+Target "PrepareResourceNames: (TargetId:26)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResources" depends on it):
+Done building target "PrepareResourceNames" in project "ReferencedProject.csproj".: (TargetId:26)
 Target "ResolveAssemblyReferences" skipped. Previously built successfully.
 Target "SplitResourcesByCulture" skipped. Previously built successfully.
-Target "BeforeResGen: (TargetId:27)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResGen" depends on it):
-Done building target "BeforeResGen" in project "CSharpTemplate.csproj".: (TargetId:27)
-Target "CoreResGen: (TargetId:28)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResGen" depends on it):
+Target "BeforeResGen: (TargetId:27)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResGen" depends on it):
+Done building target "BeforeResGen" in project "ReferencedProject.csproj".: (TargetId:27)
+Target "CoreResGen: (TargetId:28)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResGen" depends on it):
 Set Property: GenerateResourceMSBuildArchitecture=CurrentArchitecture
 Set Property: ResgenToolPath=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\
 Set Property: GenerateResourceMSBuildRuntime=CurrentRuntime
 Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' != 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and 'CurrentRuntime' != 'CLR2').
 Task "GenerateResource" skipped, due to false condition; ('%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' == 'CLR2') was evaluated as ('' == 'Resx' and '' != 'false' and 'CurrentRuntime' == 'CLR2').
-Done building target "CoreResGen" in project "CSharpTemplate.csproj".: (TargetId:28)
-Target "AfterResGen: (TargetId:29)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "ResGen" depends on it):
-Done building target "AfterResGen" in project "CSharpTemplate.csproj".: (TargetId:29)
-Target "ResGen: (TargetId:30)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareResources" depends on it):
-Done building target "ResGen" in project "CSharpTemplate.csproj".: (TargetId:30)
+Done building target "CoreResGen" in project "ReferencedProject.csproj".: (TargetId:28)
+Target "AfterResGen: (TargetId:29)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "ResGen" depends on it):
+Done building target "AfterResGen" in project "ReferencedProject.csproj".: (TargetId:29)
+Target "ResGen: (TargetId:30)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareResources" depends on it):
+Done building target "ResGen" in project "ReferencedProject.csproj".: (TargetId:30)
 Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
-Target "PrepareResources: (TargetId:31)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
-Done building target "PrepareResources" in project "CSharpTemplate.csproj".: (TargetId:31)
+Target "PrepareResources: (TargetId:31)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareResources" in project "ReferencedProject.csproj".: (TargetId:31)
 Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
 Target "ResolveReferences" skipped. Previously built successfully.
 Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
 Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
 Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
 Target "_SetExternalWin32ManifestProperties" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
-Target "_SetEmbeddedWin32ManifestProperties: (TargetId:32)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "SetWin32ManifestProperties" depends on it):
+Target "_SetEmbeddedWin32ManifestProperties: (TargetId:32)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "SetWin32ManifestProperties" depends on it):
 Set Property: EmbeddedWin32Manifest=
 Set Property: Win32Manifest=
 Using "GetFrameworkPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
@@ -1517,59 +1517,59 @@ Task "GetFrameworkPath" (TaskId:13)
   Output Property: _FrameworkVersion40Path=C:\Windows\Microsoft.NET\Framework\v4.0.30319 (TaskId:13)
 Done executing task "GetFrameworkPath". (TaskId:13)
 Set Property: EmbeddedWin32Manifest=C:\Windows\Microsoft.NET\Framework\v4.0.30319\default.win32manifest
-Done building target "_SetEmbeddedWin32ManifestProperties" in project "CSharpTemplate.csproj".: (TargetId:32)
-Target "SetWin32ManifestProperties: (TargetId:33)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
-Done building target "SetWin32ManifestProperties" in project "CSharpTemplate.csproj".: (TargetId:33)
-Target "_GenerateCompileInputs: (TargetId:34)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
+Done building target "_SetEmbeddedWin32ManifestProperties" in project "ReferencedProject.csproj".: (TargetId:32)
+Target "SetWin32ManifestProperties: (TargetId:33)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
+Done building target "SetWin32ManifestProperties" in project "ReferencedProject.csproj".: (TargetId:33)
+Target "_GenerateCompileInputs: (TargetId:34)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
 Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
 Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-Done building target "_GenerateCompileInputs" in project "CSharpTemplate.csproj".: (TargetId:34)
+Done building target "_GenerateCompileInputs" in project "ReferencedProject.csproj".: (TargetId:34)
 Target "PrepareForBuild" skipped. Previously built successfully.
 Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
-Target "_SetTargetFrameworkMonikerAttribute: (TargetId:35)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "GenerateTargetFrameworkMonikerAttribute" depends on it):
+Target "_SetTargetFrameworkMonikerAttribute: (TargetId:35)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "GenerateTargetFrameworkMonikerAttribute" depends on it):
 Set Property: TargetFrameworkMonikerAssemblyAttributeText=
 // <autogenerated />
 using System%3b
 using System.Reflection%3b
 [assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute(".NETFramework,Version=v4.5.2", FrameworkDisplayName = ".NET Framework 4.5.2")]
         
-Done building target "_SetTargetFrameworkMonikerAttribute" in project "CSharpTemplate.csproj".: (TargetId:35)
-Target "GenerateTargetFrameworkMonikerAttribute: (TargetId:36)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "BeforeCompile" depends on it):
+Done building target "_SetTargetFrameworkMonikerAttribute" in project "ReferencedProject.csproj".: (TargetId:35)
+Target "GenerateTargetFrameworkMonikerAttribute: (TargetId:36)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "BeforeCompile" depends on it):
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 Input files: C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.targets
 Output files: C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs
 Added Item(s): Compile=C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs
-Done building target "GenerateTargetFrameworkMonikerAttribute" in project "CSharpTemplate.csproj".: (TargetId:36)
+Done building target "GenerateTargetFrameworkMonikerAttribute" in project "ReferencedProject.csproj".: (TargetId:36)
 Target "GenerateAdditionalSources" skipped, due to false condition; ('@(AssemblyAttributes)' != '' and '$(GenerateAdditionalSources)' == 'true') was evaluated as ('' != '' and '' == 'true').
-Target "BeforeCompile: (TargetId:37)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
-Done building target "BeforeCompile" in project "CSharpTemplate.csproj".: (TargetId:37)
+Target "BeforeCompile: (TargetId:37)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
+Done building target "BeforeCompile" in project "ReferencedProject.csproj".: (TargetId:37)
 Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
 Target "_ComputeNonExistentFileProperty" skipped, due to false condition; (('$(BuildingInsideVisualStudio)' == 'true') and ('$(BuildingOutOfProcess)' != 'true') and (('$(BuildingProject)' == 'false') or ('$(UseHostCompilerIfAvailable)' == 'true'))) was evaluated as (('' == 'true') and ('' != 'true') and (('true' == 'false') or ('true' == 'true'))).
-Target "ResolveCodeAnalysisRuleSet: (TargetId:38)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreCompile" depends on it):
+Target "ResolveCodeAnalysisRuleSet: (TargetId:38)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreCompile" depends on it):
 Using "ResolveCodeAnalysisRuleSet" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "ResolveCodeAnalysisRuleSet" (TaskId:14)
   Task Parameter:CodeAnalysisRuleSet=MinimumRecommendedRules.ruleset (TaskId:14)
   Task Parameter:CodeAnalysisRuleSetDirectories=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets (TaskId:14)
-  Task Parameter:MSBuildProjectDirectory=F:\git\CSharpTemplate (TaskId:14)
+  Task Parameter:MSBuildProjectDirectory=F:\git\CSharpTemplate\ReferencedProject (TaskId:14)
   Output Property: ResolvedCodeAnalysisRuleSet=C:\Program Files %28x86%29\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset (TaskId:14)
 Done executing task "ResolveCodeAnalysisRuleSet". (TaskId:14)
-Done building target "ResolveCodeAnalysisRuleSet" in project "CSharpTemplate.csproj".: (TargetId:38)
-Target "PreXsdCodeGen: (TargetId:39)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreCompile" depends on it):
+Done building target "ResolveCodeAnalysisRuleSet" in project "ReferencedProject.csproj".: (TargetId:38)
+Target "PreXsdCodeGen: (TargetId:39)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreCompile" depends on it):
 Set Property: XsdCodeGenPreCondition=False
 Using "CallTarget" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "CallTarget" (TaskId:15)
   Task Parameter:Targets=CleanXsdCodeGen (TaskId:15)
-Target "CleanXsdCodeGen: (TargetId:40)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PreXsdCodeGen" depends on it):
+Target "CleanXsdCodeGen: (TargetId:40)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.ServiceModel.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PreXsdCodeGen" depends on it):
 Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "Delete" (TaskId:16)
 Done executing task "Delete". (TaskId:16)
-Done building target "CleanXsdCodeGen" in project "CSharpTemplate.csproj".: (TargetId:40)
+Done building target "CleanXsdCodeGen" in project "ReferencedProject.csproj".: (TargetId:40)
 Done executing task "CallTarget". (TaskId:15)
-Done building target "PreXsdCodeGen" in project "CSharpTemplate.csproj".: (TargetId:39)
+Done building target "PreXsdCodeGen" in project "ReferencedProject.csproj".: (TargetId:39)
 Target "XsdCodeGen" skipped, due to false condition; ( '$(XsdCodeGenPreCondition)' == 'True' ) was evaluated as ( 'False' == 'True' ).
-Target "CoreCompile: (TargetId:41)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.Core.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
+Target "CoreCompile: (TargetId:41)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.CSharp.Core.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
 Building target "CoreCompile" completely.
-Output file "obj\Debug\CSharpTemplate.dll" does not exist.
+Output file "obj\Debug\ReferencedProject.dll" does not exist.
 Set Property: NoWarn=;1701;1702
 Set Property: UseSharedCompilation=true
 Using "Csc" task from assembly "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Build.Tasks.CodeAnalysis.dll".
@@ -1585,7 +1585,7 @@ Task "Csc" (TaskId:17)
   Task Parameter:NoConfig=True (TaskId:17)
   Task Parameter:NoStandardLib=True (TaskId:17)
   Task Parameter:Optimize=False (TaskId:17)
-  Task Parameter:OutputAssembly=obj\Debug\CSharpTemplate.dll (TaskId:17)
+  Task Parameter:OutputAssembly=obj\Debug\ReferencedProject.dll (TaskId:17)
   Task Parameter:Prefer32Bit=False (TaskId:17)
   Task Parameter:
       References=
@@ -1690,153 +1690,153 @@ Task "Csc" (TaskId:17)
   Task Parameter:UseSharedCompilation=True (TaskId:17)
   Task Parameter:Utf8Output=True (TaskId:17)
   Task Parameter:WarningLevel=4 (TaskId:17)
-  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\CSharpTemplate.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output Class1.cs Properties\AssemblyInfo.cs "C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs" (TaskId:17)
+  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\ReferencedProject.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output Class1.cs Properties\AssemblyInfo.cs "C:\Users\kingc\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cs" (TaskId:17)
   Using shared compilation with compiler from directory: C:\Program Files (x86)\MSBuild\14.0\bin (TaskId:17)
   Microsoft (R) Visual C# Compiler version 1.3.1.60616 (TaskId:17)
   Copyright (C) Microsoft Corporation. All rights reserved. (TaskId:17)
   Output Item(s): CscCommandLineArgs= (TaskId:17)
 Done executing task "Csc". (TaskId:17)
 Task "CallTarget" skipped, due to false condition; ('$(TargetsTriggeredByCompilation)' != '') was evaluated as ('' != '').
-Done building target "CoreCompile" in project "CSharpTemplate.csproj".: (TargetId:41)
+Done building target "CoreCompile" in project "ReferencedProject.csproj".: (TargetId:41)
 Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Library'=='library')).
-Target "AfterCompile: (TargetId:42)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
-Done building target "AfterCompile" in project "CSharpTemplate.csproj".: (TargetId:42)
+Target "AfterCompile: (TargetId:42)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
+Done building target "AfterCompile" in project "ReferencedProject.csproj".: (TargetId:42)
 Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
 Target "CreateTfsBuildInfoFile" skipped, due to false condition; ( $(GenerateBuildInfoConfigFile)==true AND $(WebProjectOutputDir)!='') was evaluated as ( false==true AND !='').
-Target "SetBuildInfoDefaults: (TargetId:43)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "DeleteBuildInfoFile" depends on it):
-Set Property: BuildId=AutoGen_4adb16c4-59a4-4371-a661-cd495eb20ac1
-Set Property: BuildLabel=AutoGen_4adb16c4-59a4-4371-a661-cd495eb20ac1
-Set Property: BuildTimestamp=Mon, 19 Dec 2016 21:21:01 GMT
-Set Property: BuildInfoPath=F:\git\CSharpTemplate\bin\Debug\
-Set Property: BuildInfoFileName=CSharpTemplate.BuildInfo.config
-Set Property: BuildInfoResourceFileName= obj\Debug\CSharpTemplate.BuildInfo.config
-Set Property: BuildInfoConfigFileName= F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.BuildInfo.config
+Target "SetBuildInfoDefaults: (TargetId:43)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "DeleteBuildInfoFile" depends on it):
+Set Property: BuildId=AutoGen_312633e8-781d-4d1e-b725-b5993d27ef8b
+Set Property: BuildLabel=AutoGen_312633e8-781d-4d1e-b725-b5993d27ef8b
+Set Property: BuildTimestamp=Tue, 20 Dec 2016 01:44:13 GMT
+Set Property: BuildInfoPath=F:\git\CSharpTemplate\ReferencedProject\bin\Debug\
+Set Property: BuildInfoFileName=ReferencedProject.BuildInfo.config
+Set Property: BuildInfoResourceFileName= obj\Debug\ReferencedProject.BuildInfo.config
+Set Property: BuildInfoConfigFileName= F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.BuildInfo.config
 Set Property: BuildInfoResourceLogicalName=Microsoft.VisualStudio.BuildInfo.Config
-Done building target "SetBuildInfoDefaults" in project "CSharpTemplate.csproj".: (TargetId:43)
-Target "DeleteBuildInfoFile: (TargetId:44)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
-Task "Delete" skipped, due to false condition; (EXISTS('$(BuildInfoConfigFileName)')) was evaluated as (EXISTS(' F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.BuildInfo.config')).
-Done building target "DeleteBuildInfoFile" in project "CSharpTemplate.csproj".: (TargetId:44)
+Done building target "SetBuildInfoDefaults" in project "ReferencedProject.csproj".: (TargetId:43)
+Target "DeleteBuildInfoFile: (TargetId:44)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
+Task "Delete" skipped, due to false condition; (EXISTS('$(BuildInfoConfigFileName)')) was evaluated as (EXISTS(' F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.BuildInfo.config')).
+Done building target "DeleteBuildInfoFile" in project "ReferencedProject.csproj".: (TargetId:44)
 Target "SetBuildInfoDefaults" skipped. Previously built successfully.
-Target "DeleteBuildInfoResource: (TargetId:45)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
-Task "Delete" skipped, due to false condition; (EXISTS('$(BuildInfoResourceFileName)')) was evaluated as (EXISTS(' obj\Debug\CSharpTemplate.BuildInfo.config')).
-Done building target "DeleteBuildInfoResource" in project "CSharpTemplate.csproj".: (TargetId:45)
+Target "DeleteBuildInfoResource: (TargetId:45)" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
+Task "Delete" skipped, due to false condition; (EXISTS('$(BuildInfoResourceFileName)')) was evaluated as (EXISTS(' obj\Debug\ReferencedProject.BuildInfo.config')).
+Done building target "DeleteBuildInfoResource" in project "ReferencedProject.csproj".: (TargetId:45)
 Target "PrepareResourcesForSatelliteAssemblies" skipped, due to false condition; ('$(UICulture)' != '') was evaluated as ('' != '').
 Target "MergeLocalizationDirectives" skipped, due to false condition; ('@(GeneratedLocalizationFiles)' !='') was evaluated as ('' !='').
-Target "AfterCompileWinFX: (TargetId:46)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "_AfterCompileWinFXInternal" depends on it):
-Done building target "AfterCompileWinFX" in project "CSharpTemplate.csproj".: (TargetId:46)
-Target "_AfterCompileWinFXInternal: (TargetId:47)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Compile" depends on it):
-Done building target "_AfterCompileWinFXInternal" in project "CSharpTemplate.csproj".: (TargetId:47)
-Target "Compile: (TargetId:48)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
-Done building target "Compile" in project "CSharpTemplate.csproj".: (TargetId:48)
+Target "AfterCompileWinFX: (TargetId:46)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "_AfterCompileWinFXInternal" depends on it):
+Done building target "AfterCompileWinFX" in project "ReferencedProject.csproj".: (TargetId:46)
+Target "_AfterCompileWinFXInternal: (TargetId:47)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Compile" depends on it):
+Done building target "_AfterCompileWinFXInternal" in project "ReferencedProject.csproj".: (TargetId:47)
+Target "Compile: (TargetId:48)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
+Done building target "Compile" in project "ReferencedProject.csproj".: (TargetId:48)
 Target "DeferredValidation" skipped, due to false condition; ('$(SkipWorkflowValidation)' != 'true' and ('@(XamlPage)' != '' or '@(XamlAppDef)' != '')) was evaluated as ('' != 'true' and ('' != '' or '' != '')).
 Target "ExportWindowsMDFile" skipped, due to false condition; ('$(ExportWinMDFile)' == 'true') was evaluated as ('' == 'true').
 Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
                     ('$(_AssemblyTimestampBeforeCompile)' == '')) and
                    Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Library' != 'library') or
                     ('' == '')) and
-                   Exists('obj\CSharpTemplate.csproj.UnmanagedRegistration.cache')).
+                   Exists('obj\ReferencedProject.csproj.UnmanagedRegistration.cache')).
 Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-Target "_GenerateSatelliteAssemblyInputs: (TargetId:49)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CreateSatelliteAssemblies" depends on it):
+Target "_GenerateSatelliteAssemblyInputs: (TargetId:49)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CreateSatelliteAssemblies" depends on it):
 Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
 Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-Done building target "_GenerateSatelliteAssemblyInputs" in project "CSharpTemplate.csproj".: (TargetId:49)
+Done building target "_GenerateSatelliteAssemblyInputs" in project "ReferencedProject.csproj".: (TargetId:49)
 Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
 Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-Target "CreateSatelliteAssemblies: (TargetId:50)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
-Done building target "CreateSatelliteAssemblies" in project "CSharpTemplate.csproj".: (TargetId:50)
+Target "CreateSatelliteAssemblies: (TargetId:50)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
+Done building target "CreateSatelliteAssemblies" in project "ReferencedProject.csproj".: (TargetId:50)
 Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='' or '$(GenerateAppxManifest)' == 'true') was evaluated as (''=='true' or ''!='' or ''!='' or '' == 'true').
-Target "GetTargetPath: (TargetId:51)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
+Target "GetTargetPath: (TargetId:51)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
 Added Item(s): 
     TargetPathWithTargetPlatformMoniker=
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
+        F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
                 TargetPlatformIdentifier=Windows
                 TargetPlatformMoniker=Windows,Version=7.0
-Done building target "GetTargetPath" in project "CSharpTemplate.csproj".: (TargetId:51)
+Done building target "GetTargetPath" in project "ReferencedProject.csproj".: (TargetId:51)
 Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
 Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
 Target "AssignTargetPaths" skipped. Previously built successfully.
 Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-Target "GetCopyToOutputDirectoryXamlAppDefs: (TargetId:52)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+Target "GetCopyToOutputDirectoryXamlAppDefs: (TargetId:52)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "GetCopyToOutputDirectoryItems" depends on it):
 Task "AssignTargetPath" (TaskId:18)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:18)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate\ReferencedProject (TaskId:18)
 Done executing task "AssignTargetPath". (TaskId:18)
-Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "CSharpTemplate.csproj".: (TargetId:52)
-Target "GetCopyToOutputDirectoryItems: (TargetId:53)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "ReferencedProject.csproj".: (TargetId:52)
+Target "GetCopyToOutputDirectoryItems: (TargetId:53)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
 Set Property: _GCTODIKeepDuplicates=false
 Set Property: _GCTODIKeepMetadata=CopyToOutputDirectory;TargetPath
 Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
 Task "AssignTargetPath" (TaskId:19)
-  Task Parameter:RootFolder=F:\git\CSharpTemplate (TaskId:19)
+  Task Parameter:RootFolder=F:\git\CSharpTemplate\ReferencedProject (TaskId:19)
 Done executing task "AssignTargetPath". (TaskId:19)
-Done building target "GetCopyToOutputDirectoryItems" in project "CSharpTemplate.csproj".: (TargetId:53)
+Done building target "GetCopyToOutputDirectoryItems" in project "ReferencedProject.csproj".: (TargetId:53)
 Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
 Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-Target "_CopySourceItemsToOutputDirectory: (TargetId:54)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CopyFilesToOutputDirectory" depends on it):
-Done building target "_CopySourceItemsToOutputDirectory" in project "CSharpTemplate.csproj".: (TargetId:54)
+Target "_CopySourceItemsToOutputDirectory: (TargetId:54)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Done building target "_CopySourceItemsToOutputDirectory" in project "ReferencedProject.csproj".: (TargetId:54)
 Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
 Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-Target "_CheckForCompileOutputs: (TargetId:55)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CopyFilesToOutputDirectory" depends on it):
-Added Item(s): FileWrites=obj\Debug\CSharpTemplate.dll
+Target "_CheckForCompileOutputs: (TargetId:55)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CopyFilesToOutputDirectory" depends on it):
+Added Item(s): FileWrites=obj\Debug\ReferencedProject.dll
 Set Property: _DocumentationFileProduced=false
-Added Item(s): FileWrites=obj\Debug\CSharpTemplate.pdb
-Done building target "_CheckForCompileOutputs" in project "CSharpTemplate.csproj".: (TargetId:55)
+Added Item(s): FileWrites=obj\Debug\ReferencedProject.pdb
+Done building target "_CheckForCompileOutputs" in project "ReferencedProject.csproj".: (TargetId:55)
 Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-Target "CopyFilesToOutputDirectory: (TargetId:56)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "PrepareForRun" depends on it):
+Target "CopyFilesToOutputDirectory: (TargetId:56)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "PrepareForRun" depends on it):
 Set Property: CreateHardLinksForCopyFilesToOutputDirectoryIfPossible=false
 Set Property: CopyBuildOutputToOutputDirectory=true
 Set Property: CopyOutputSymbolsToOutputDirectory=true
 Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "Copy" (TaskId:20)
-  Task Parameter:SourceFiles=obj\Debug\CSharpTemplate.dll (TaskId:20)
+  Task Parameter:SourceFiles=obj\Debug\ReferencedProject.dll (TaskId:20)
   Task Parameter:DestinationFolder=bin\Debug\ (TaskId:20)
   Task Parameter:SkipUnchangedFiles=True (TaskId:20)
   Task Parameter:OverwriteReadOnlyFiles=False (TaskId:20)
   Task Parameter:UseHardlinksIfPossible=False (TaskId:20)
-  Copying file from "obj\Debug\CSharpTemplate.dll" to "bin\Debug\CSharpTemplate.dll". (TaskId:20)
+  Copying file from "obj\Debug\ReferencedProject.dll" to "bin\Debug\ReferencedProject.dll". (TaskId:20)
   Output Item(s): 
       MainAssembly=
-          bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll (TaskId:20)
+          bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll (TaskId:20)
   Output Item(s): 
       FileWrites=
-          bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll (TaskId:20)
+          bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll (TaskId:20)
 Done executing task "Copy". (TaskId:20)
 Task "Message" (TaskId:21)
   Task Parameter:Importance=High (TaskId:21)
-  Task Parameter:Text=CSharpTemplate -> F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll (TaskId:21)
-  CSharpTemplate -> F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll (TaskId:21)
+  Task Parameter:Text=ReferencedProject -> F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll (TaskId:21)
+  ReferencedProject -> F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll (TaskId:21)
 Done executing task "Message". (TaskId:21)
 Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
 Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
 Task "Copy" (TaskId:22)
-  Task Parameter:SourceFiles=obj\Debug\CSharpTemplate.pdb (TaskId:22)
-  Task Parameter:DestinationFiles=bin\Debug\CSharpTemplate.pdb (TaskId:22)
+  Task Parameter:SourceFiles=obj\Debug\ReferencedProject.pdb (TaskId:22)
+  Task Parameter:DestinationFiles=bin\Debug\ReferencedProject.pdb (TaskId:22)
   Task Parameter:SkipUnchangedFiles=True (TaskId:22)
   Task Parameter:OverwriteReadOnlyFiles=False (TaskId:22)
   Task Parameter:UseHardlinksIfPossible=False (TaskId:22)
-  Copying file from "obj\Debug\CSharpTemplate.pdb" to "bin\Debug\CSharpTemplate.pdb". (TaskId:22)
+  Copying file from "obj\Debug\ReferencedProject.pdb" to "bin\Debug\ReferencedProject.pdb". (TaskId:22)
   Output Item(s): 
       FileWrites=
-          bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:22)
+          bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb (TaskId:22)
 Done executing task "Copy". (TaskId:22)
 Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
 Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
 Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
 Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
 Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
-Done building target "CopyFilesToOutputDirectory" in project "CSharpTemplate.csproj".: (TargetId:56)
+Done building target "CopyFilesToOutputDirectory" in project "ReferencedProject.csproj".: (TargetId:56)
 Target "RunCodeAnalysis" skipped, due to false condition; ('$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as (''=='true').
-Target "PrepareForRun: (TargetId:57)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
-Done building target "PrepareForRun" in project "CSharpTemplate.csproj".: (TargetId:57)
+Target "PrepareForRun: (TargetId:57)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareForRun" in project "ReferencedProject.csproj".: (TargetId:57)
 Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'Library'=='library').
 Target "_CheckForCompileOutputs" skipped. Previously built successfully.
 Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-Target "_CleanGetCurrentAndPriorFileWrites: (TargetId:58)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "IncrementalClean" depends on it):
+Target "_CleanGetCurrentAndPriorFileWrites: (TargetId:58)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "IncrementalClean" depends on it):
 Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "ReadLinesFromFile" (TaskId:23)
-  Task Parameter:File=obj\Debug\CSharpTemplate.csproj.FileListAbsolute.txt (TaskId:23)
+  Task Parameter:File=obj\Debug\ReferencedProject.csproj.FileListAbsolute.txt (TaskId:23)
 Done executing task "ReadLinesFromFile". (TaskId:23)
 Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "ConvertToAbsolutePath" (TaskId:24)
@@ -2027,81 +2027,81 @@ Task "ConvertToAbsolutePath" (TaskId:24)
 Done executing task "ConvertToAbsolutePath". (TaskId:24)
 Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "FindUnderPath" (TaskId:25)
-  Task Parameter:Path=F:\git\CSharpTemplate (TaskId:25)
+  Task Parameter:Path=F:\git\CSharpTemplate\ReferencedProject (TaskId:25)
   Task Parameter:UpdateToAbsolutePaths=True (TaskId:25)
-  Comparison path is "F:\git\CSharpTemplate". (TaskId:25)
+  Comparison path is "F:\git\CSharpTemplate\ReferencedProject". (TaskId:25)
 Done executing task "FindUnderPath". (TaskId:25)
 Task "FindUnderPath" (TaskId:26)
   Task Parameter:Path=bin\Debug\ (TaskId:26)
   Task Parameter:
       Files=
-          obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          obj\Debug\CSharpTemplate.dll
-          obj\Debug\CSharpTemplate.pdb
-          bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:26)
+          obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          obj\Debug\ReferencedProject.dll
+          obj\Debug\ReferencedProject.pdb
+          bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb (TaskId:26)
   Task Parameter:UpdateToAbsolutePaths=True (TaskId:26)
   Comparison path is "bin\Debug\". (TaskId:26)
   Output Item(s): 
       _CleanCurrentFileWritesInOutput=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:26)
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb (TaskId:26)
 Done executing task "FindUnderPath". (TaskId:26)
 Task "FindUnderPath" (TaskId:27)
   Task Parameter:Path=obj\Debug\ (TaskId:27)
   Task Parameter:
       Files=
-          obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          obj\Debug\CSharpTemplate.dll
-          obj\Debug\CSharpTemplate.pdb
-          bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb (TaskId:27)
+          obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          obj\Debug\ReferencedProject.dll
+          obj\Debug\ReferencedProject.pdb
+          bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb (TaskId:27)
   Task Parameter:UpdateToAbsolutePaths=True (TaskId:27)
   Comparison path is "obj\Debug\". (TaskId:27)
   Output Item(s): 
       _CleanCurrentFileWritesInIntermediate=
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:27)
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb (TaskId:27)
 Done executing task "FindUnderPath". (TaskId:27)
 Added Item(s): 
     _CleanCurrentFileWritesWithNoReferences=
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
+        F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                OriginalItemSpec=obj\Debug\ReferencedProject.dll
+        F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                OriginalItemSpec=obj\Debug\ReferencedProject.pdb
+        F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+        F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+        F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb
 Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "RemoveDuplicates" (TaskId:28)
   Task Parameter:
       Inputs=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:28)
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb (TaskId:28)
   Output Item(s): 
       _CleanCurrentFileWrites=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:28)
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb (TaskId:28)
 Done executing task "RemoveDuplicates". (TaskId:28)
-Done building target "_CleanGetCurrentAndPriorFileWrites" in project "CSharpTemplate.csproj".: (TargetId:58)
-Target "IncrementalClean: (TargetId:59)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "CoreBuild" depends on it):
+Done building target "_CleanGetCurrentAndPriorFileWrites" in project "ReferencedProject.csproj".: (TargetId:58)
+Target "IncrementalClean: (TargetId:59)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "CoreBuild" depends on it):
 Task "FindUnderPath" (TaskId:29)
   Task Parameter:Path=bin\Debug\ (TaskId:29)
   Comparison path is "bin\Debug\". (TaskId:29)
@@ -2115,57 +2115,57 @@ Task "Delete" (TaskId:31)
 Done executing task "Delete". (TaskId:31)
 Added Item(s): 
     _CleanRemainingFileWritesAfterIncrementalClean=
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-        F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb
+        F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                OriginalItemSpec=obj\Debug\ReferencedProject.dll
+        F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                OriginalItemSpec=obj\Debug\ReferencedProject.pdb
+        F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+        F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+        F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb
 Task "RemoveDuplicates" (TaskId:32)
   Task Parameter:
       Inputs=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:32)
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb (TaskId:32)
   Output Item(s): 
       _CleanUniqueRemainingFileWritesAfterIncrementalClean=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:32)
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb (TaskId:32)
 Done executing task "RemoveDuplicates". (TaskId:32)
 Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "WriteLinesToFile" (TaskId:33)
-  Task Parameter:File=obj\Debug\CSharpTemplate.csproj.FileListAbsolute.txt (TaskId:33)
+  Task Parameter:File=obj\Debug\ReferencedProject.csproj.FileListAbsolute.txt (TaskId:33)
   Task Parameter:
       Lines=
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.dll
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\bin\Debug\CSharpTemplate.pdb
-                  OriginalItemSpec=obj\Debug\CSharpTemplate.pdb
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.csprojResolveAssemblyReference.cache
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.dll
-          F:\git\CSharpTemplate\obj\Debug\CSharpTemplate.pdb (TaskId:33)
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.dll
+                  OriginalItemSpec=obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\bin\Debug\ReferencedProject.pdb
+                  OriginalItemSpec=obj\Debug\ReferencedProject.pdb
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.csprojResolveAssemblyReference.cache
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.dll
+          F:\git\CSharpTemplate\ReferencedProject\obj\Debug\ReferencedProject.pdb (TaskId:33)
   Task Parameter:Overwrite=True (TaskId:33)
 Done executing task "WriteLinesToFile". (TaskId:33)
-Done building target "IncrementalClean" in project "CSharpTemplate.csproj".: (TargetId:59)
+Done building target "IncrementalClean" in project "ReferencedProject.csproj".: (TargetId:59)
 Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
-Target "CoreBuild: (TargetId:60)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Build" depends on it):
-Done building target "CoreBuild" in project "CSharpTemplate.csproj".: (TargetId:60)
+Target "CoreBuild: (TargetId:60)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Build" depends on it):
+Done building target "CoreBuild" in project "ReferencedProject.csproj".: (TargetId:60)
 Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
-Target "AfterBuild: (TargetId:61)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (target "Build" depends on it):
-Done building target "AfterBuild" in project "CSharpTemplate.csproj".: (TargetId:61)
-Target "Build: (TargetId:62)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (entry point):
-Done building target "Build" in project "CSharpTemplate.csproj".: (TargetId:62)
-Done Building Project "F:\git\CSharpTemplate\CSharpTemplate.csproj" (default targets).
+Target "AfterBuild: (TargetId:61)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (target "Build" depends on it):
+Done building target "AfterBuild" in project "ReferencedProject.csproj".: (TargetId:61)
+Target "Build: (TargetId:62)" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (entry point):
+Done building target "Build" in project "ReferencedProject.csproj".: (TargetId:62)
+Done Building Project "F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj" (default targets).
 Deferred Messages
 
 Detailed Build Summary
@@ -2175,103 +2175,103 @@ Detailed Build Summary
   ============================== Build Hierarchy (IDs represent configurations) =====================================================
   Id                  : Exclusive Time   Total Time   Path (Targets)
   ----------------------------------------------------------------------------------------------------------------------------------- (TaskId:0)
-  0                   : 0.840s           0.840s       F:\git\CSharpTemplate\CSharpTemplate.csproj ()  (TaskId:0)
+  0                   : 0.517s           0.517s       F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj ()  (TaskId:0)
   
   ============================== Node Utilization (IDs represent configurations) ====================================================
   Timestamp:            1        Duration   Cumulative
   ----------------------------------------------------------------------------------------------------------------------------------- (TaskId:0)
-  636177792604281701:   0        0.840s     0.840s ################ (TaskId:0)
+  636177950534940379:   0        0.517s     0.517s ########## (TaskId:0)
   -----------------------------------------------------------------------------------------------------------------------------------
   Utilization:          100.0    Average Utilization: 100.0 (TaskId:0)
 
 Project Performance Summary:
-      792 ms  F:\git\CSharpTemplate\CSharpTemplate.csproj   1 calls
+      468 ms  F:\git\CSharpTemplate\ReferencedProject\ReferencedProject.csproj   1 calls
 
 Target Performance Summary:
         0 ms  BeforeCompile                              1 calls
-        0 ms  _SplitProjectReferencesByFileExistence     1 calls
         0 ms  _CopySourceItemsToOutputDirectory          1 calls
+        0 ms  GetInstalledSDKLocations                   1 calls
         0 ms  PrepareForRun                              1 calls
         0 ms  ResolveReferences                          1 calls
         0 ms  CreateSatelliteAssemblies                  1 calls
+        0 ms  ExpressionBuildExtension                   1 calls
         0 ms  BeforeResGen                               1 calls
-        0 ms  _GenerateCompileInputs                     1 calls
-        0 ms  ValidationExtension                        1 calls
+        0 ms  Build                                      1 calls
         0 ms  ResGen                                     1 calls
-        0 ms  DeleteBuildInfoResource                    1 calls
-        0 ms  CreateCustomManifestResourceNames          1 calls
         0 ms  AfterResGen                                1 calls
         0 ms  AfterCompile                               1 calls
+        0 ms  GetTargetPath                              1 calls
         0 ms  AfterResolveReferences                     1 calls
         0 ms  AfterMarkupCompilePass1                    1 calls
         0 ms  _AfterCompileWinFXInternal                 1 calls
         0 ms  CoreBuild                                  1 calls
-        0 ms  Build                                      1 calls
+        0 ms  CreateCustomManifestResourceNames          1 calls
         0 ms  DeleteBuildInfoFile                        1 calls
         0 ms  AfterCompileWinFX                          1 calls
-        0 ms  Compile                                    1 calls
+        0 ms  ResolveSDKReferences                       1 calls
+        0 ms  _GenerateSatelliteAssemblyInputs           1 calls
+        0 ms  PrepareResourceNames                       1 calls
+        0 ms  AfterBuild                                 1 calls
+        0 ms  BeforeBuild                                1 calls
         0 ms  SetWin32ManifestProperties                 1 calls
         0 ms  BeforeResolveReferences                    1 calls
-        0 ms  FileClassification                         1 calls
-        0 ms  ModifyUnitTestPlatformVersion              1 calls
-        0 ms  AfterBuild                                 1 calls
-        0 ms  PrepareResourceNames                       1 calls
-        0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
-        0 ms  ExpandSDKReferences                        1 calls
-        0 ms  ResolveSDKReferences                       1 calls
-        0 ms  BeforeBuild                                1 calls
+        0 ms  BuildOnlySettings                          1 calls
         0 ms  PrepareResources                           1 calls
-        0 ms  GetInstalledSDKLocations                   1 calls
-        0 ms  GetTargetPath                              1 calls
+        0 ms  Compile                                    1 calls
+        0 ms  GetFrameworkPaths                          1 calls
         0 ms  _CheckForCompileOutputs                    1 calls
-        0 ms  GetCopyToOutputDirectoryItems              1 calls
-        0 ms  ImplicitlyExpandDesignTimeFacades          1 calls
-        0 ms  CleanXsdCodeGen                            1 calls
-        1 ms  GenerateTargetFrameworkMonikerAttribute    1 calls
-        1 ms  _SetTargetFrameworkMonikerAttribute        1 calls
-        1 ms  ResolveProjectReferences                   1 calls
-        1 ms  _GenerateSatelliteAssemblyInputs           1 calls
-        1 ms  BuildOnlySettings                          1 calls
+        0 ms  _SetTargetFrameworkMonikerAttribute        1 calls
+        0 ms  ResolveProjectReferences                   1 calls
+        0 ms  GenerateTargetFrameworkMonikerAttribute    1 calls
+        0 ms  DeleteBuildInfoResource                    1 calls
+        1 ms  _SplitProjectReferencesByFileExistence     1 calls
+        1 ms  ImplicitlyExpandDesignTimeFacades          1 calls
+        1 ms  ExpandSDKReferences                        1 calls
+        1 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
+        1 ms  ModifyUnitTestPlatformVersion              1 calls
+        1 ms  CleanXsdCodeGen                            1 calls
         1 ms  ResolveCodeAnalysisRuleSet                 1 calls
-        1 ms  _SetEmbeddedWin32ManifestProperties        1 calls
-        1 ms  GetFrameworkPaths                          1 calls
+        1 ms  GetCopyToOutputDirectoryItems              1 calls
+        1 ms  _GenerateCompileInputs                     1 calls
+        1 ms  FileClassification                         1 calls
         1 ms  SetBuildInfoDefaults                       1 calls
-        1 ms  SplitResourcesByCulture                    1 calls
-        1 ms  PreXsdCodeGen                              1 calls
         1 ms  PrepareForBuild                            1 calls
+        1 ms  _SetEmbeddedWin32ManifestProperties        1 calls
+        1 ms  SplitResourcesByCulture                    1 calls
         1 ms  AssignTargetPaths                          1 calls
-        3 ms  GetReferenceAssemblyPaths                  1 calls
-        3 ms  CoreResGen                                 1 calls
+        2 ms  PreXsdCodeGen                              1 calls
+        2 ms  GetReferenceAssemblyPaths                  1 calls
+        4 ms  CoreResGen                                 1 calls
         4 ms  _CleanGetCurrentAndPriorFileWrites         1 calls
-        6 ms  CopyFilesToOutputDirectory                 1 calls
-        6 ms  IncrementalClean                           1 calls
-        7 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
-       10 ms  ExpressionBuildExtension                   1 calls
-       27 ms  ResolveAssemblyReferences                  1 calls
-      671 ms  CoreCompile                                1 calls
+        5 ms  IncrementalClean                           1 calls
+        5 ms  CopyFilesToOutputDirectory                 1 calls
+        6 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+       10 ms  ValidationExtension                        1 calls
+       25 ms  ResolveAssemblyReferences                  1 calls
+      360 ms  CoreCompile                                1 calls
 
 Task Performance Summary:
         0 ms  AssignCulture                              1 calls
-        0 ms  MakeDir                                    1 calls
-        0 ms  ResolveCodeAnalysisRuleSet                 1 calls
         0 ms  AssignTargetPath                           6 calls
-        0 ms  Delete                                     2 calls
-        1 ms  ReadLinesFromFile                          1 calls
-        1 ms  Message                                    3 calls
-        1 ms  GetFrameworkPath                           1 calls
+        0 ms  MakeDir                                    1 calls
+        0 ms  RemoveDuplicates                           2 calls
+        0 ms  ReadLinesFromFile                          1 calls
         1 ms  FindAppConfigFile                          1 calls
+        1 ms  Delete                                     2 calls
+        1 ms  ResolveCodeAnalysisRuleSet                 1 calls
         1 ms  ConvertToAbsolutePath                      1 calls
+        1 ms  GetFrameworkPath                           1 calls
         1 ms  CallTarget                                 1 calls
         1 ms  GetReferenceAssemblyPaths                  1 calls
-        1 ms  RemoveDuplicates                           2 calls
-        3 ms  FindUnderPath                              5 calls
+        2 ms  FindUnderPath                              5 calls
+        2 ms  Message                                    3 calls
         4 ms  WriteLinesToFile                           1 calls
         4 ms  Copy                                       2 calls
-       26 ms  ResolveAssemblyReference                   1 calls
-      650 ms  Csc                                        1 calls
+       24 ms  ResolveAssemblyReference                   1 calls
+      355 ms  Csc                                        1 calls
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.85
+Time Elapsed 00:00:00.52
