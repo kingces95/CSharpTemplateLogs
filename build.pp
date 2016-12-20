@@ -188,7 +188,7 @@ F:\git\CSharpTemplate\CSharpTemplate.csproj
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>5f7213fd-aac9-478d-a78b-58846a6282cc</ProjectGuid>
+    <ProjectGuid>{5F7213FD-AAC9-478D-A78B-58846A6282CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSharpTemplate</RootNamespace>
@@ -226,6 +226,12 @@ F:\git\CSharpTemplate\CSharpTemplate.csproj
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ReferencedProject\ReferencedProject.csproj">
+      <Project>{fa03276b-d69a-46ec-85dc-19d42a26f55c}</Project>
+      <Name>ReferencedProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <!--
 ============================================================================================================================================
